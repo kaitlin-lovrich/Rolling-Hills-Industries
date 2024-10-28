@@ -12,7 +12,7 @@ export function Header() {
 
     useEffect(() => {
         function handleScroll() {
-            const isAtTop = window.scrollY <= 250;
+            const isAtTop = window.scrollY <= 50;
             setIsScrolledToTop(isAtTop);
         }
         window.addEventListener("scroll", handleScroll);
@@ -24,9 +24,9 @@ export function Header() {
     }, []);
 
     return (
-        <header className="w-full bg-white sticky top-0">
+        <header className="w-full bg-white sticky top-0 z-40">
             <PromoBanner />
-            <nav className="flex justify-between items-center mr-4">
+            <div className="flex justify-between items-center mr-4">
                 <Link
                     href={"/"}
                     className={`duration-500 ease-out relative ${
@@ -40,16 +40,14 @@ export function Header() {
                         alt="Rolling Hills Industries Commercial Cleaning Company"
                         className="duration-500 ease-out hover:scale-105 scale-100"
                         fill={true}
-                        style={{
-                            objectFit: "cover",
-                        }}
+                        sizes="(max-width: 768px) 96px, (max-width: 1024px) 112px, 170px"
                         priority={true}
                     />
                 </Link>
 
-                <div>
+                <nav>
                     <ul
-                        className={`lg:flex hidden gap-6 font-bold duration-500 ease-out  text-black sm:text-red-200 md:text-green-200 lg:text-red-800 xl:text-yellow 2xl:text-dark-gray ${
+                        className={`lg:flex hidden gap-6 font-bold duration-500 ease-out ${
                             isScrolledToTop ? "text-lg" : "text-base"
                         }`}
                     >
@@ -59,7 +57,7 @@ export function Header() {
                                     href={hrefToTitle[page]}
                                     className={`duration-500 ease-out ${
                                         page === "Contact"
-                                            ? `bg-navy-blue px-6 py-4 rounded-full text-white tracking-wide ${
+                                            ? `bg-navy-blue/90 hover:bg-navy-blue/80  px-6 py-4 rounded-full text-white drop-shadow-md hover:text-yellow tracking-wide ${
                                                   pathName.includes(
                                                       hrefToTitle[page]
                                                   )
@@ -82,8 +80,8 @@ export function Header() {
                             </li>
                         ))}
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
     );
 }

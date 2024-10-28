@@ -1,23 +1,11 @@
 import type { Metadata } from "next";
 import { Inria_Sans } from "next/font/google";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "./components/index";
 
 const inriaSans = Inria_Sans({
-    weight: "400",
+    weight: ["300", "400", "700"],
     subsets: ["latin"],
-});
-
-const geistSans = localFont({
-    src: "./fonts/GeistVF.woff",
-    variable: "--font-geist-sans",
-    weight: "100 900",
-});
-const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
-    variable: "--font-geist-mono",
-    weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -34,9 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head></head>
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} ${inriaSans.className} text-navy-blue`}
-            >
+            <body className={`${inriaSans.className} text-navy-blue`}>
                 <Header />
                 {children}
             </body>

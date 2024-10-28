@@ -7,6 +7,10 @@ const config: Config = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+        backgroundImage: {
+            "yellow-gray-blue-gradient":
+                "linear-gradient(rgba(232, 169, 39, .75) 0%, rgba(169, 186, 213, .80) 100%)",
+        },
         extend: {
             colors: {
                 background: "var(--background)",

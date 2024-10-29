@@ -63,6 +63,7 @@ export function Header() {
                     >
                         <AnimatedMenuIcon
                             isModalOpen={isModalOpen}
+                            isScrolledToTop={isScrolledToTop}
                             setIsModalOpen={setIsModalOpen}
                         />
                     </span>

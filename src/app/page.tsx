@@ -16,6 +16,9 @@ export default function Home() {
                         Since 2022
                     </span>
                 </Banner>
+                <section>
+                    <article></article>
+                </section>
             </main>
         </>
     );

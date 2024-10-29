@@ -2,12 +2,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { pageNames, hrefToTitle } from "../_utilities";
 import { useEffect, useState } from "react";
-import { PromoBanner } from "./index";
+import { DesktopNavigation, MobileNavigation, PromoBanner } from "./index";
+import { AnimatedMenuIcon } from "./AnimatedMenu";
 
 export function Header() {
     const [isScrolledToTop, setIsScrolledToTop] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const pathName = usePathname();
 
     useEffect(() => {
@@ -24,7 +25,9 @@ export function Header() {
     }, []);
 
     return (
-        <header className="w-full bg-white sticky top-0 z-40">
+        <header
+            className={`w-full bg-white sticky top-0 z-40 duration-500 ease-in-out transition opacity transform`}
+        >
             <PromoBanner />
             <div className="flex justify-between items-center mr-4">
                 <Link
@@ -45,41 +48,26 @@ export function Header() {
                     />
                 </Link>
 
-                <nav>
-                    <ul
-                        className={`lg:flex hidden gap-6 font-bold duration-500 ease-out ${
-                            isScrolledToTop ? "text-lg" : "text-base"
+                <nav className="relative">
+                    <DesktopNavigation
+                        isScrolledToTop={isScrolledToTop}
+                        pathName={pathName}
+                    />
+                    <span
+                        className={`md:hidden hover:cursor-pointer duration-300 ease-out ${
+                            isModalOpen
+                                ? "relative z-50 *:absolute bottom-4 right-11"
+                                : ""
                         }`}
+                        onClick={() => setIsModalOpen(!isModalOpen)}
                     >
-                        {pageNames.map((page) => (
-                            <li key={page}>
-                                <Link
-                                    href={hrefToTitle[page]}
-                                    className={`duration-500 ease-out ${
-                                        page === "Contact"
-                                            ? `bg-navy-blue/90 hover:bg-navy-blue/80  px-6 py-4 rounded-full text-white drop-shadow-md hover:text-yellow tracking-wide ${
-                                                  pathName.includes(
-                                                      hrefToTitle[page]
-                                                  )
-                                                      ? "text-yellow"
-                                                      : ""
-                                              } ${
-                                                  isScrolledToTop
-                                                      ? "px-6 py-4"
-                                                      : "px-[18px] py-2.5"
-                                              }`
-                                            : pathName.includes(
-                                                  hrefToTitle[page]
-                                              )
-                                            ? "underline decoration-yellow decoration-4 underline-offset-8"
-                                            : ""
-                                    }`}
-                                >
-                                    {page}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                        <AnimatedMenuIcon
+                            isModalOpen={isModalOpen}
+                            setIsModalOpen={setIsModalOpen}
+                        />
+                    </span>
+
+                    {isModalOpen && <MobileNavigation pathName={pathName} />}
                 </nav>
             </div>
         </header>

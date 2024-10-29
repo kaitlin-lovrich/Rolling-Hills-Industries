@@ -18,3 +18,13 @@ export interface ButtonProps {
     handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
     text: string;
 }
+
+export interface NavigationProps {
+    isScrolledToTop?: boolean;
+    pathName: string;
+}
+
+export interface AnimatedMenuIconProps {
+    isModalOpen: boolean;
+    setIsModalOpen: (isModalOpen: boolean) => void;
+}

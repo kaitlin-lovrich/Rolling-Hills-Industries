@@ -10,6 +10,8 @@ const config: Config = {
         backgroundImage: {
             "yellow-gray-blue-gradient":
                 "linear-gradient(rgba(232, 169, 39, .75) 0%, rgba(169, 186, 213, .80) 100%)",
+            "transparent-navy-blue-gradient":
+                "linear-gradient(to right, rgba(3, 41, 84, 0) 0%, rgba(2, 24, 49, .80) 50%, rgba(2, 24, 49, .95) 75%, rgba(2, 24, 49, .95) 100%)",
         },
         extend: {
             colors: {

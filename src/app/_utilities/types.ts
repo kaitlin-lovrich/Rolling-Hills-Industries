@@ -27,4 +27,5 @@ export interface NavigationProps {
 export interface AnimatedMenuIconProps {
     isModalOpen: boolean;
     setIsModalOpen: (isModalOpen: boolean) => void;
+    isScrolledToTop: boolean;
 }

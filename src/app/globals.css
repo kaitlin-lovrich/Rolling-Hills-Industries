@@ -3,20 +3,13 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+    background: rgb(255, 255, 255);
+    color: rgb(3, 41, 84);
 }
 
 body {
-    color: var(--foreground);
-    background: var(--background);
+    color: rgb(3, 41, 84);
+    background: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -30,6 +23,11 @@ body {
     margin-right: 0.5rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+}
+
+.hamburger-scrolled {
+    width: 30px;
+    height: 35px;
 }
 
 .bar {
@@ -57,4 +55,12 @@ body {
 
 .hamburger.open .bar:nth-child(3) {
     transform: translateY(-13px) rotate(-45deg);
+}
+
+.hamburger-scrolled.open .bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger-scrolled.open .bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
 }

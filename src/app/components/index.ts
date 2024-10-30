@@ -4,3 +4,5 @@ export * from "./PromoBanner";
 export * from "./Button";
 export * from "./DesktopNavigation";
 export * from "./MobileNavigation";
+export * from "./Footer";
+export * from "./FooterNavigation";

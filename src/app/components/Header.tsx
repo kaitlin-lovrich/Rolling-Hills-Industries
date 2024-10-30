@@ -26,7 +26,7 @@ export function Header() {
 
     return (
         <header
-            className={`w-full bg-white sticky top-0 z-40 duration-500 ease-in-out transition opacity transform`}
+            className={`w-full bg-white sticky top-0 z-40 drop-shadow-md duration-500 ease-in-out transition opacity transform`}
         >
             <PromoBanner />
             <div className="flex justify-between items-center mr-4">
@@ -45,6 +45,7 @@ export function Header() {
                         fill={true}
                         sizes="(max-width: 768px) 96px, (max-width: 1024px) 112px, 170px"
                         priority={true}
+                        quality={100}
                     />
                 </Link>
 
@@ -54,7 +55,7 @@ export function Header() {
                         pathName={pathName}
                     />
                     <span
-                        className={`md:hidden hover:cursor-pointer duration-300 ease-out ${
+                        className={`lg:hidden hover:cursor-pointer duration-300 ease-out ${
                             isModalOpen
                                 ? "relative z-50 *:absolute bottom-4 right-11"
                                 : ""

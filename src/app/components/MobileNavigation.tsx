@@ -35,9 +35,7 @@ export function MobileNavigation({ pathName }: NavigationProps) {
                         <Link
                             href={hrefToTitle[page]}
                             className={`duration-1000 ease-in-out transition opacity transform ${
-                                delayLoading
-                                    ? "translate-x-full opacity-0"
-                                    : "translate-x-0 opacity-100"
+                                delayLoading ? "opacity-0" : "opacity-100"
                             } ${
                                 pathName.includes(hrefToTitle[page])
                                     ? "underline decoration-yellow decoration-4 underline-offset-8 font-bold"

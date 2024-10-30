@@ -24,7 +24,7 @@ export function Footer() {
                     </a>
                 </span>
             </div>
-            <hr className="w-full border-t-2 border-off-white"></hr>
+            <hr className="w-full border-t-1 border-off-white"></hr>
             <section className="w-full bg-footer-container text-off-white">
                 <div className="flex flex-col sm:flex-row w-[90%] lg:w-[75%] max-w-[1020px] mx-auto py-6 sm:py-10 gap-10 *:gap-4 sm:*:gap-6">
                     <nav className="flex flex-col w-full sm:w-1/2 text-center md:text-left">

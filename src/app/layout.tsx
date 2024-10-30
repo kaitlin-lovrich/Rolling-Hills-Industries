@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inria_Sans } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "./components/index";
@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     title: "Rolling Hills Industries | Commercial Cleaning Company",
     description:
         "Rolling Hills Industries is a commercial cleaning company and supply dealer proudly serving Western Pennsylvania, offering top-quality cleaning services and bulk cleaning supplies for businesses.",
+    creator: "Kaitlin Lovrich",
+};
+
+export const viewport: Viewport = {
     themeColor: "#032954",
 };
 

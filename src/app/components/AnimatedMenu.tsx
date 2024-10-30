@@ -7,7 +7,7 @@ export function AnimatedMenuIcon({
 }: AnimatedMenuIconProps) {
     return (
         <div
-            className={`hamburger ${isModalOpen ? "open" : ""} ${
+            className={`hamburger z-50 ${isModalOpen ? "open" : ""} ${
                 isScrolledToTop ? "" : "hamburger-scrolled"
             }`}
             onClick={() => setIsModalOpen(!isModalOpen)}

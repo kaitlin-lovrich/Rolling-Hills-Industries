@@ -21,8 +21,6 @@ const config: Config = {
         },
         extend: {
             colors: {
-                background: "var(--background)",
-                foreground: "var(--foreground)",
                 "navy-blue": "rgb(3, 41, 84)",
                 "gray-blue": "rgb(99, 129, 179)",
                 "dark-gray": "rgb(58, 67, 76)",

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     title: "Rolling Hills Industries | Commercial Cleaning Company",
     description:
         "Rolling Hills Industries is a commercial cleaning company and supply dealer proudly serving Western Pennsylvania, offering top-quality cleaning services and bulk cleaning supplies for businesses.",
+    themeColor: "#032954",
 };
 
 export default function RootLayout({

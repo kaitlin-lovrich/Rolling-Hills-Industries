@@ -17,7 +17,9 @@ export function Footer() {
             <div className="relative">
                 <span className="flex z-30 absolute bottom-0 justify-center items-center w-full text-off-white bg-navy-blue/90 p-2">
                     <a
-                        href="#"
+                        href="https://www.facebook.com/rollinghillsindustries/"
+                        target="_blank"
+                        rel="noopener noreffer"
                         className=" *:size-10 hover:text-yellow scale-100 hover:scale-105 duration-500 ease-out"
                     >
                         <BsFacebook />
@@ -71,7 +73,11 @@ export function Footer() {
                     <div className="flex flex-col gap-1.5 xl:gap-3 text-center mx-auto text-sm xl:text-base">
                         <p className="*:duration-300 *:ease-out *:hover:cursor-pointer *:hover:text-yellow">
                             Website built and designed by{" "}
-                            <a href="https://kaitlin-lovrich-portfolio.vercel.app/">
+                            <a
+                                href="https://kaitlin-lovrich-portfolio.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreffer"
+                            >
                                 Kaitlin Lovrich
                             </a>
                         </p>

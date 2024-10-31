@@ -34,10 +34,6 @@ export const metadata: Metadata = {
     },
 };
 
-// export const viewport: Viewport = {
-//     themeColor: "#032954",
-// };
-
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -46,7 +42,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <meta name="theme-color" content="#032954" />
+                <meta name="theme-color" content="rgba(3, 41, 84, .75)" />
             </head>
             <body className={`${inriaSans.className} text-navy-blue`}>
                 <Header />

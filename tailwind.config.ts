@@ -21,7 +21,7 @@ const config: Config = {
             "business-card-overlay":
                 "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(251, 251, 253, 0) 25%, rgba(3, 41, 84, .20) 50%, rgba(3, 41, 84, .75) 70%, rgba(3, 41, 84, .80) 100%)",
             "gray-blue-yellow-gradient":
-                "linear-gradient(to bottom rgba(3, 41, 84, .25) 0%, rgba(232, 169, 39, .25) 100%)",
+                "linear-gradient(to bottom, rgba(3, 41, 84, .25) 0%, rgba(232, 169, 39, .25) 100%)",
         },
         extend: {
             colors: {

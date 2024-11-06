@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function BusinessCard({ business }: BusinessCardProps) {
     return (
-        <div className="relative w-[150px] h-[150px] sm:w-[200px] lg:w-[200px] xl:w-[260px] 2xl:w-[300px] sm:h-[200px] lg:h-[200px] xl:h-[260px] 2xl:h-[300px] drop-shadow-mlg">
+        <div className="relative w-[150px] sm:w-[200px] lg:w-[200px] xl:w-[260px] 2xl:w-[300px] h-[150px] sm:h-[200px] lg:h-[200px] xl:h-[260px] 2xl:h-[300px] drop-shadow-mlg">
             <Image
                 src={business.imageSrc}
                 alt={business.alt}

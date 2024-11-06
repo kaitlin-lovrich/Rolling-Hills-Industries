@@ -1,6 +1,7 @@
 import { businessesServiced } from "./_utilities";
 import { Banner, Button, BusinessCard } from "./components";
 import Image from "next/image";
+import { ClientList } from "./components/ClientList";
 
 export default function Home() {
     return (
@@ -158,6 +159,22 @@ export default function Home() {
                                     className="rounded-xl"
                                 />
                             </div>
+                        </div>
+                    </article>
+                </section>
+                <section className="mx-auto w-[95%] max-w-[1800px]">
+                    <article className="flex flex-col text-center gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-9 sm:py-11 lg:py-20 xl:py-24 overflow-hidden">
+                        <h2 className="text-navy-blue  font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+                            Our Clients
+                        </h2>
+                        <p className="text-dark-gray text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
+                            Rolling Hills offers dependable and professional
+                            cleaning and janitorial services for any business or
+                            organization in Westmoreland, Indiana, and
+                            surrounding counties.
+                        </p>
+                        <div className="flex">
+                            <ClientList />
                         </div>
                     </article>
                 </section>

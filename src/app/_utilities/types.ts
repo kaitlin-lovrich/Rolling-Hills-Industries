@@ -38,3 +38,8 @@ export type Business = {
     imageSrc: string;
     alt: string;
 };
+
+export type Client = {
+    imageSrc: string;
+    alt: string;
+};

@@ -64,3 +64,9 @@ body {
 .hamburger-scrolled.open .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
+@layer utilities {
+    .pause {
+        animation-play-state: paused;
+    }
+}

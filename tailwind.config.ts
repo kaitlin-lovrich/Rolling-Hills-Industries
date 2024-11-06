@@ -31,6 +31,15 @@ const config: Config = {
                 "yellow": "rgb(232, 169, 39)",
                 "off-white": "rgb(235, 235, 235)",
             },
+            animation: {
+                "slide-clients": "slideClients 50s linear infinite",
+            },
+            keyframes: {
+                slideClients: {
+                    "0%": { transform: "translateX(0)" },
+                    "100%": { transform: "translateX(-50%)" },
+                },
+            },
         },
     },
     plugins: [],

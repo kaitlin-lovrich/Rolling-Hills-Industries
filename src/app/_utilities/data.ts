@@ -1,4 +1,4 @@
-import { Page } from "../_utilities";
+import { Page, Business } from "../_utilities";
 
 export const pageNames: Page[] = [
     "Home",
@@ -17,3 +17,12 @@ export const hrefToTitle: Record<Page, string> = {
     "Employment": "/employment",
     "Contact": "/contact",
 };
+
+export const businessesServiced: Business[] = [
+    { imageSrc: "/bank.jpg", alt: "Banks" },
+    { imageSrc: "/medical-facility.png", alt: "Medical Facilities" },
+    { imageSrc: "/surgical-facility.jpg", alt: "Surgical Facilities" },
+    { imageSrc: "/office-buildings.jpg", alt: "Office Buildings" },
+    { imageSrc: "/warehouse.jpg", alt: "Warehouses" },
+    { imageSrc: "/automobile-showroom.jpg", alt: "Automobile Showrooms" },
+];

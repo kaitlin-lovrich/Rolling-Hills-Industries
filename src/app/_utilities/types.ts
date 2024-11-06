@@ -29,3 +29,12 @@ export interface AnimatedMenuIconProps {
     setIsModalOpen: (isModalOpen: boolean) => void;
     isScrolledToTop: boolean;
 }
+
+export interface BusinessCardProps {
+    business: Business;
+}
+
+export type Business = {
+    imageSrc: string;
+    alt: string;
+};

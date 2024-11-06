@@ -16,7 +16,7 @@ export function ClientList() {
             {[...clientList, ...clientList].map((client, index) => (
                 <div
                     key={index}
-                    className="relative flex-shrink-0 w-[300px] h-[180px] m-3 drop-shadow-md"
+                    className="relative flex-shrink-0 w-[150px] sm:w-[200px] lg:w-[250px] xl:w-[300px] h-[90px] sm:h-[120px] lg:h-[150px] xl:h-[180px] m-2 sm:m-3 drop-shadow-md"
                 >
                     <Image src={client.imageSrc} alt={client.alt} fill={true} />
                 </div>

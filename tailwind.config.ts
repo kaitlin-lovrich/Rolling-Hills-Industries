@@ -30,6 +30,7 @@ const config: Config = {
                 "dark-gray": "rgb(58, 67, 76)",
                 "yellow": "rgb(232, 169, 39)",
                 "off-white": "rgb(235, 235, 235)",
+                "blue-white": "rgb(210, 219, 233)",
             },
             animation: {
                 "slide-clients": "slideClients 50s linear infinite",

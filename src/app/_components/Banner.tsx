@@ -13,7 +13,7 @@ export function Banner({
             className={`w-full relative ${
                 isHomePage
                     ? "h-[25rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[45rem]"
-                    : "h-34 xl:h-96"
+                    : "h-[15rem] lg:h-[20rem] xl:h-[25rem] 2xl:h-[35rem]"
             }`}
         >
             <Image
@@ -23,7 +23,13 @@ export function Banner({
                 priority={true}
                 className="opacity-50"
             />
-            <div className="w-full h-full bg-yellow-gray-blue-gradient absolute flex flex-col justify-center items-center text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl px-4 md:px-8 gap-8 sm:gap-10 lg:gap-16 xl:gap-20 2xl:gap-28">
+            <div
+                className={`${
+                    isHomePage
+                        ? "flex flex-col justify-center items-center text-center px-4 md:px-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
+                        : "text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+                } w-full h-full bg-yellow-gray-blue-gradient absolute font-bold gap-8 sm:gap-10 lg:gap-16 xl:gap-20 2xl:gap-28`}
+            >
                 {title}
                 {children}
             </div>

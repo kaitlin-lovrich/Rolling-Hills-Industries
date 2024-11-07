@@ -19,7 +19,7 @@ export function DesktopNavigation({
                             className={`duration-500 ease-out ${
                                 page === "Contact"
                                     ? `bg-navy-blue/90 hover:bg-navy-blue/80  px-6 py-4 rounded-full text-white drop-shadow-md hover:text-yellow tracking-wide ${
-                                          pathName.includes(hrefToTitle[page])
+                                          pathName === hrefToTitle[page]
                                               ? "text-yellow"
                                               : ""
                                       } ${
@@ -27,7 +27,7 @@ export function DesktopNavigation({
                                               ? "px-6 py-4"
                                               : "px-[18px] py-2.5"
                                       }`
-                                    : pathName.includes(hrefToTitle[page])
+                                    : pathName === hrefToTitle[page]
                                     ? "underline decoration-yellow decoration-4 underline-offset-8"
                                     : ""
                             }`}

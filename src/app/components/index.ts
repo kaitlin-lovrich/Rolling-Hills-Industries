@@ -7,3 +7,5 @@ export * from "./MobileNavigation";
 export * from "./Footer";
 export * from "./FooterNavigation";
 export * from "./BusinessCard";
+export * from "./ClientList";
+export * from "./Video";

@@ -37,7 +37,7 @@ export function MobileNavigation({ pathName }: NavigationProps) {
                             className={`duration-1000 ease-in-out transition opacity transform ${
                                 delayLoading ? "opacity-0" : "opacity-100"
                             } ${
-                                pathName.includes(hrefToTitle[page])
+                                pathName === hrefToTitle[page]
                                     ? "underline decoration-yellow decoration-4 underline-offset-8 font-bold"
                                     : "hover:font-bold"
                             }`}

@@ -14,7 +14,7 @@ export function PromoBanner() {
 
     return (
         <div
-            className={`flex w-full bg-yellow justify-between items-center py-1 font-bold duration-500 transition opacity transform ${
+            className={`flex w-full bg-yellow justify-between items-center py-1 font-bold sm:text-lg duration-500 transition opacity transform ${
                 isMounted
                     ? "translate-y-0 opacity-100"
                     : "-translate-y-full opacity-0"

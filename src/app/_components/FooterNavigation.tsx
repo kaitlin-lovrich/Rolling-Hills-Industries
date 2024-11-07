@@ -13,7 +13,7 @@ export function FooterNavigation({ pathName }: NavigationProps) {
                             href={hrefToTitle[page]}
                             className={`duration-500 ease-out transition opacity transform text-lg
                                 ${
-                                    pathName.includes(hrefToTitle[page])
+                                    pathName === hrefToTitle[page]
                                         ? "underline decoration-yellow decoration-4 underline-offset-8 font-bold"
                                         : "hover:text-yellow"
                                 }`}

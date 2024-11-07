@@ -9,7 +9,7 @@ const config: Config = {
     theme: {
         backgroundImage: {
             "yellow-gray-blue-gradient":
-                "linear-gradient(rgba(232, 169, 39, .75) 0%, rgba(169, 186, 213, .80) 100%)",
+                "linear-gradient(rgba(232, 169, 39, .40) 0%, rgba(169, 186, 213, .40) 100%)",
             "transparent-navy-blue-gradient":
                 "linear-gradient(to right, rgba(3, 41, 84, 0) 0%, rgba(2, 24, 49, .80) 50%, rgba(2, 24, 49, .95) 75%, rgba(2, 24, 49, .95) 100%)",
             "footer-image-overlay-1":
@@ -18,6 +18,10 @@ const config: Config = {
                 "linear-gradient(to top, rgba(3, 41, 84, .40) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%)",
             "footer-container":
                 "linear-gradient(to top, rgba(3, 41, 84, .95) 0%, rgba(3, 41, 84, 1) 100%)",
+            "business-card-overlay":
+                "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(251, 251, 253, 0) 25%, rgba(3, 41, 84, .20) 50%, rgba(3, 41, 84, .75) 70%, rgba(3, 41, 84, .80) 100%)",
+            "gray-blue-yellow-gradient":
+                "linear-gradient(to bottom, rgba(3, 41, 84, .25) 0%, rgba(232, 169, 39, .25) 100%)",
         },
         extend: {
             colors: {
@@ -26,6 +30,15 @@ const config: Config = {
                 "dark-gray": "rgb(58, 67, 76)",
                 "yellow": "rgb(232, 169, 39)",
                 "off-white": "rgb(235, 235, 235)",
+            },
+            animation: {
+                "slide-clients": "slideClients 50s linear infinite",
+            },
+            keyframes: {
+                slideClients: {
+                    "0%": { transform: "translateX(0)" },
+                    "100%": { transform: "translateX(-50%)" },
+                },
             },
         },
     },

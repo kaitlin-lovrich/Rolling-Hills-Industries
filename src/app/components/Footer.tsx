@@ -81,7 +81,7 @@ export function Footer() {
                                 Kaitlin Lovrich
                             </a>
                         </p>
-                        <p className="text-black sm:text-red-200 md:text-dark-gray lg:text-red-800 xl:text-yellow">
+                        <p>
                             Copyright © 2024 Rolling Hills Industries. All
                             rights Reserved.
                         </p>

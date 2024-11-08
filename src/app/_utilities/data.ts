@@ -1,4 +1,4 @@
-import { Page, Business, Client } from "../_utilities";
+import { Page, Business, Client, CleaningProduct } from "../_utilities";
 
 export const pageNames: Page[] = [
     "Home",
@@ -60,4 +60,18 @@ export const clientList: Client[] = [
         imageSrc: "/technimark.png",
         alt: "Technimark",
     },
+];
+
+export const cleaningProductsList: CleaningProduct[] = [
+    { name: "Floor Care" },
+    { name: "Restroom care" },
+    { name: "General office maintenance" },
+    { name: "Paper products" },
+    { name: "Degreasers/cleaners" },
+    { name: "Hard surface disinfectants" },
+    { name: "Floor coatings" },
+    { name: "Hand care products" },
+    { name: "Mops" },
+    { name: "Brooms" },
+    { name: "Buckets" },
 ];

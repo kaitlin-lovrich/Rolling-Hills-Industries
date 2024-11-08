@@ -22,7 +22,7 @@ export default function Home() {
             <section className="w-full relative h-[45rem] sm:h-[55rem] md:h-[40rem] lg:h-[45rem] xl:h-[55rem] 2xl:h-[65rem]">
                 <Image
                     src="/man-holding-cleaning-supplies.jpg"
-                    alt="Man holding cleaning supplies"
+                    alt="Man in uniform holding commercial cleaning supplies"
                     fill={true}
                     priority={true}
                     className="opacity-50"
@@ -40,12 +40,12 @@ export default function Home() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-9 sm:py-11 lg:py-20 xl:py-24 bg-gray-blue-yellow-gradient">
+                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-11 sm:py-14 lg:py-28 xl:py-32 bg-gray-blue-yellow-gradient">
                     <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Our Mission Is To Go Beyond Cleaning
                     </h2>
                     <div className="flex flex-col-reverse xl:flex-row gap-8 w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
-                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl gap-8 xl:gap-0 ">
+                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray gap-8 xl:gap-0">
                             <div className="flex flex-col gap-5">
                                 <p>
                                     Rolling Hills Industries&apos; value to you
@@ -73,7 +73,7 @@ export default function Home() {
                         <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[650px] xl:w-1/2 xl:max-w-full 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
                             <Image
                                 src="/professional-cleaner-showing-approval.jpg"
-                                alt="Professional cleaner approved"
+                                alt="Smiling professional cleaner in uniform giving a thumbs up"
                                 fill={true}
                                 className="rounded-xl"
                             />
@@ -82,7 +82,7 @@ export default function Home() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-9 sm:py-11 lg:py-20 xl:py-24">
+                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-11 sm:py-14 lg:py-28 xl:py-32">
                     <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Top-Quality Cleaning Supplies Used
                     </h2>
@@ -95,7 +95,7 @@ export default function Home() {
                                 className="rounded-xl"
                             />
                         </div>
-                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl gap-8 xl:gap-0 ">
+                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray gap-8 xl:gap-0 ">
                             <div className="flex flex-col gap-5">
                                 <p>
                                     When you need janitorial and cleaning
@@ -121,12 +121,12 @@ export default function Home() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-9 sm:py-11 lg:py-20 xl:py-24 bg-off-white">
+                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-11 sm:py-14 lg:py-28 xl:py-32 bg-off-white">
                     <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Reliable Janitorial Services
                     </h2>
                     <div className="flex flex-col-reverse xl:flex-row gap-8 w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
-                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl gap-8 xl:gap-0 ">
+                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray gap-8 xl:gap-0 ">
                             <div className="flex flex-col gap-5">
                                 <p>
                                     Rolling Hills Industries serves businesses
@@ -149,7 +149,7 @@ export default function Home() {
                         <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[650px] xl:w-1/2 xl:max-w-full 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
                             <Image
                                 src="/reliable-janitorial-service.jpg"
-                                alt="Rveliable janitorial service"
+                                alt="Reliable janitorial service"
                                 fill={true}
                                 className="rounded-xl"
                             />
@@ -158,11 +158,11 @@ export default function Home() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col text-center gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-9 sm:py-11 lg:py-20 xl:py-24 overflow-hidden">
+                <article className="flex flex-col text-center gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-11 sm:py-14 lg:py-28 xl:py-32 overflow-hidden">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Our Clients
                     </h2>
-                    <p className="text-dark-gray text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
+                    <p className="text-dark-gray w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
                         Rolling Hills offers dependable and professional
                         cleaning and janitorial services for any business or
                         organization in Westmoreland, Indiana, and surrounding
@@ -174,7 +174,7 @@ export default function Home() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col justify-center items-center py-9 sm:py-11 lg:py-20 xl:py-24">
+                <article className="flex flex-col justify-center items-center py-11 sm:py-14 lg:py-28 xl:py-32">
                     <div className="w-[95%] max-w-[1300px] sm:w-[90%] lg:w-[90%]">
                         <Video />
                     </div>

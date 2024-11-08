@@ -22,11 +22,14 @@ const config: Config = {
                 "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(251, 251, 253, 0) 25%, rgba(3, 41, 84, .20) 50%, rgba(3, 41, 84, .75) 70%, rgba(3, 41, 84, .80) 100%)",
             "gray-blue-yellow-gradient":
                 "linear-gradient(to bottom, rgba(3, 41, 84, .25) 0%, rgba(232, 169, 39, .25) 100%)",
+            "diagonal-light-blue-to-navy":
+                "linear-gradient(to bottom right, rgba(99, 129, 179, .90) 0%, rgba(27, 63, 107, .90) 50%, rgba(3, 41, 84, .90) 100%)",
         },
         extend: {
             colors: {
                 "navy-blue": "rgb(3, 41, 84)",
                 "gray-blue": "rgb(99, 129, 179)",
+                "light-blue": "rgb(99, 129, 179)",
                 "dark-gray": "rgb(58, 67, 76)",
                 "yellow": "rgb(232, 169, 39)",
                 "off-white": "rgb(235, 235, 235)",

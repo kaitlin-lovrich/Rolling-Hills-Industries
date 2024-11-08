@@ -44,7 +44,9 @@ export default function RootLayout({
             <head>
                 <meta name="theme-color" content="rgba(3, 41, 84, .75)" />
             </head>
-            <body className={`${inriaSans.className} text-navy-blue`}>
+            <body
+                className={`${inriaSans.className} text-navy-blue text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl`}
+            >
                 <Header />
                 {children}
                 <Footer />

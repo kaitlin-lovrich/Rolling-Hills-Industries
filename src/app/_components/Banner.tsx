@@ -13,7 +13,7 @@ export function Banner({
             className={`w-full relative ${
                 isHomePage
                     ? "h-[25rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[45rem]"
-                    : "h-[15rem] lg:h-[20rem] xl:h-[25rem] 2xl:h-[35rem]"
+                    : "h-[10rem] sm:h-[15rem] lg:h-[20rem] xl:h-[25rem] 2xl:h-[35rem]"
             }`}
         >
             <Image

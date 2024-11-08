@@ -1,5 +1,4 @@
 import { Banner } from "../_components";
-// import Image from "next/image";
 
 export default function About() {
     return (
@@ -15,7 +14,7 @@ export default function About() {
                 </div>
             </Banner>
             <section className="mx-auto w-[95%] max-w-[1810px] mt-4 sm:mt-7 lg:mt-11 xl:mt-16">
-                <article className="flex flex-col justify-center items-center gap-5 sm:gap-9 lg:gap-14 xl:gap-16 px-5 lg:px-0 py-4 sm:py-7 lg:py-11 xl:py-16 text-center text-dark-gray text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
+                <article className="flex flex-col justify-center items-center gap-5 sm:gap-9 lg:gap-14 xl:gap-16 px-5 lg:px-0 py-4 sm:py-7 lg:py-11 xl:py-16 text-center text-dark-gray w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         About Rolling Hills Industries
                     </h2>
@@ -31,6 +30,7 @@ export default function About() {
                             <a
                                 href="tel:+1724-539-4199"
                                 className="underline decoration-yellow decoration-4 underline-offset-4 text-navy-blue font-bold"
+                                aria-label="Call Rolling Hills Industries for a free estimate"
                             >
                                 Call us
                             </a>{" "}
@@ -49,8 +49,8 @@ export default function About() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1810px]">
-                <article className="flex flex-col justify-center items-center gap-5 sm:gap-9 lg:gap-14 xl:gap-16 px-5 lg:px-0 py-4 sm:py-7 lg:py-11 xl:py-16 text-center text-dark-gray text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
-                    <h2 className="text-navy-blue  font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+                <article className="flex flex-col justify-center items-center gap-5 sm:gap-9 lg:gap-14 xl:gap-16 px-5 lg:px-0 py-4 sm:py-7 lg:py-11 xl:py-16 text-center text-dark-gray w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
+                    <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Why Choose Rolling Hills?
                     </h2>
                     <div className="flex flex-col gap-5">

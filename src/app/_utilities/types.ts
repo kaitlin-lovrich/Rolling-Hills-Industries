@@ -43,3 +43,7 @@ export type Client = {
     imageSrc: string;
     alt: string;
 };
+
+export type CleaningProduct = {
+    name: string;
+};

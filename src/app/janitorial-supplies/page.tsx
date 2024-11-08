@@ -6,8 +6,8 @@ export default function JanitorialSupplies() {
     return (
         <main className="flex flex-col gap-4 min-h-screen">
             <Banner
-                backgroundImageUrl="/professional-cleaning-service-person-using-steam-cleaner-office.jpg"
-                altText="Professional cleaning service person using steam cleaner office"
+                backgroundImageUrl="/person-taking-care-office-cleaning2.jpg"
+                altText="Person taking care office cleaning"
             >
                 <div className="flex items-end w-full h-full">
                     <div className="bg-blue-white/50 w-full pl-5 lg:pl-20 py-1 sm:py-2 xl:py-3">

@@ -1,4 +1,10 @@
-import { Page, Business, Client, CleaningProduct } from "../_utilities";
+import {
+    Page,
+    Business,
+    Client,
+    CleaningProduct,
+    EmployeeBenefit,
+} from "../_utilities";
 
 export const pageNames: Page[] = [
     "Home",
@@ -74,4 +80,16 @@ export const cleaningProductsList: CleaningProduct[] = [
     { name: "Mops" },
     { name: "Brooms" },
     { name: "Buckets" },
+];
+
+export const employeeBenefitsList: EmployeeBenefit[] = [
+    { name: "Proudly employee owned" },
+    { name: "Receive equity and participate in dividends" },
+    { name: "401 (k) with employee match" },
+    { name: "Healthcare, vision, dental benefits for full-time employees" },
+    { name: "Training provided" },
+    { name: "Flexible hours" },
+    { name: "Work close to home" },
+    { name: "Opportunities for advancement" },
+    { name: "35+ years in business" },
 ];

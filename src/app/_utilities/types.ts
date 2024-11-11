@@ -47,3 +47,7 @@ export type Client = {
 export type CleaningProduct = {
     name: string;
 };
+
+export type EmployeeBenefit = {
+    name: string;
+};

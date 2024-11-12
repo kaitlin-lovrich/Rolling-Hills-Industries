@@ -86,10 +86,10 @@ export const employeeBenefitsList: EmployeeBenefit[] = [
     { name: "Proudly employee owned" },
     { name: "Receive equity and participate in dividends" },
     { name: "401 (k) with employee match" },
-    { name: "Healthcare, vision, dental benefits for full-time employees" },
+    { name: "35+ years in business" },
     { name: "Training provided" },
     { name: "Flexible hours" },
     { name: "Work close to home" },
     { name: "Opportunities for advancement" },
-    { name: "35+ years in business" },
+    { name: "Healthcare, vision, dental benefits for full-time employees" },
 ];

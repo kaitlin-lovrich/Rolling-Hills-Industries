@@ -2,7 +2,7 @@ import { Banner } from "../_components";
 
 export default function About() {
     return (
-        <main className="flex flex-col gap-5 min-h-screen">
+        <main className="flex flex-col gap-10 xl:gap-14 min-h-screen">
             <Banner
                 backgroundImageUrl="/shiny-night-city.jpg"
                 altText="Shiny night city"
@@ -13,12 +13,12 @@ export default function About() {
                     </div>
                 </div>
             </Banner>
-            <section className="mx-auto w-[95%] max-w-[1810px] mt-4 sm:mt-7 lg:mt-11 xl:mt-16">
-                <article className="flex flex-col justify-center items-center gap-5 sm:gap-9 lg:gap-14 xl:gap-16 px-5 lg:px-0 py-4 sm:py-7 lg:py-11 xl:py-16 text-center text-dark-gray w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
-                    <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+            <section className="mx-auto w-[95%] max-w-[1400px] lg:mt-4">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 text-center w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
+                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         About Rolling Hills Industries
                     </h2>
-                    <div className="flex flex-col gap-3 sm:gap-5">
+                    <div className="flex flex-col gap-3 xl:gap-5">
                         <p>
                             Rolling Hills Industries has been locally owned and
                             serving Western PA since 1986, and proudly
@@ -48,12 +48,12 @@ export default function About() {
                     </div>
                 </article>
             </section>
-            <section className="mx-auto w-[95%] max-w-[1810px]">
-                <article className="flex flex-col justify-center items-center gap-5 sm:gap-9 lg:gap-14 xl:gap-16 px-5 lg:px-0 py-4 sm:py-7 lg:py-11 xl:py-16 text-center text-dark-gray w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
-                    <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+            <section className="mx-auto w-[95%] max-w-[1400px]">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 text-center w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
+                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Why Choose Rolling Hills?
                     </h2>
-                    <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-3 xl:gap-5">
                         <p>
                             Cleaning and janitorial services are critical to our
                             commercial and industrial client, that is why
@@ -69,8 +69,8 @@ export default function About() {
                     </div>
                 </article>
             </section>
-            <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="w-full pt-4 sm:pt-7 lg:pt-11 xl:pt-16">
+            <section className="mx-auto w-[95%] max-w-[1400px]">
+                <article className="w-full">
                     <iframe
                         className="aspect-video h-full min-h-[545px] lg:min-h-[650px] max-h-[800px] xl:max-h-[900px] rounded-xl"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.0390909054245!2d-79.38554292325173!3d40.31928997145544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834cd4d7433928d%3A0x230fc3511100926c!2sRolling%20Hills%20Industries!5e0!3m2!1sen!2sus!4v1730999364494!5m2!1sen!2sus"

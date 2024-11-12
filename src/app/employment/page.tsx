@@ -16,7 +16,7 @@ export default function Employment() {
                 </div>
             </Banner>
             <section className="mx-auto w-[95%] max-w-[1400px] lg:mt-4">
-                <article className="flex flex-col justify-center items-center px-5 lg:px-0  gap-5 lg:gap-7 xl:gap-10 2xl:gap-12  w-full sm:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
+                <article className="flex flex-col justify-center items-center px-5 lg:px-0  gap-5 lg:gap-7 xl:gap-10 w-full sm:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Join the Team at Rolling Hills Industries
                     </h2>

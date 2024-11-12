@@ -67,7 +67,7 @@ export default function Employment() {
                         Benefits of Working With Rolling Hills Industries
                     </h3>
 
-                    <ul className="grid grid-cols-2 gap-3 xl:gap-6 font-bold text-navy-blue list-disc ml-10 sm:ml-14">
+                    <ul className="grid md:grid-cols-2 gap-3 xl:gap-6 font-bold text-navy-blue list-disc ml-10 md:ml-14 *:w-[90%]">
                         {employeeBenefitsList.map((benefit, index) => (
                             <li key={index}>{benefit.name}</li>
                         ))}

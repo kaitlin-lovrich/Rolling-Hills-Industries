@@ -91,7 +91,7 @@ export default function Contact() {
                                     // value={formData["from_name"]}
                                     // onChange={handleChange}
                                     required
-                                    aria-label="Name Input"
+                                    aria-label="Name"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
                                 />
                             </label>
@@ -104,44 +104,43 @@ export default function Contact() {
                                     // value={formData["reply_to"]}
                                     // onChange={handleChange}
                                     required
-                                    aria-label="Email Input"
+                                    aria-label="Email"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
                                 ></input>
                             </label>
-                            <label htmlFor="reply_to">
+                            <label htmlFor="phone_number">
                                 Phone Number
                                 <input
-                                    type="phone_number?"
-                                    id=""
-                                    name=""
-                                    // value={formData["reply_to"]}
+                                    type="tel"
+                                    id="phone_number"
+                                    name="phone_number"
+                                    // value={formData["phone_number"]}
                                     // onChange={handleChange}
                                     required
-                                    aria-label="Phone number input"
+                                    aria-label="Phone number"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
                                 ></input>
                             </label>
-
-                            <label htmlFor="reply_to">
+                            <label htmlFor="business_name">
                                 Business/Company Name
                                 <input
-                                    type="name"
-                                    id=""
-                                    name=""
-                                    // value={formData["reply_to"]}
+                                    type="text"
+                                    id="business_name"
+                                    name="business_name"
+                                    // value={formData["business_name"]}
                                     // onChange={handleChange}
                                     required
                                     aria-label="Business or company name"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
                                 ></input>
                             </label>
-                            <label htmlFor="reply_to">
+                            <label htmlFor="address">
                                 Physical Address
                                 <input
-                                    type="name"
-                                    id=""
-                                    name=""
-                                    // value={formData["reply_to"]}
+                                    type="text"
+                                    id="address"
+                                    name="address"
+                                    // value={formData["address"]}
                                     // onChange={handleChange}
                                     required
                                     aria-label="Physical Address"
@@ -150,33 +149,79 @@ export default function Contact() {
                             </label>
                         </div>
                         <div className="grid md:grid-cols-2 gap-5 xl:gap-7">
-                            <label htmlFor="reply_to">
+                            <label htmlFor="industry_type">
                                 Industry Type
-                                <input
-                                    type="select"
-                                    id=""
-                                    name=""
-                                    // value={formData["reply_to"]}
-                                    // onChange={handleChange}
-                                    placeholder="Select"
+                                <select
+                                    id="industry_type"
+                                    name="industry_type"
+                                    // value={formData["industry_type"]}
                                     required
-                                    aria-label="Phone number input"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
-                                ></input>
+                                    aria-label="Industry Type"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white *:text-dark-gray"
+                                >
+                                    <option value="" disabled selected>
+                                        Select Industry
+                                    </option>
+                                    <option value="manufacturing">
+                                        Manufacturing
+                                    </option>
+                                    <option value="warehousing">
+                                        Warehousing
+                                    </option>
+                                    <option value="education">Education</option>
+                                    <option value="government">
+                                        Government
+                                    </option>
+                                    <option value="financial">Financial</option>
+                                    <option value="hospitality">
+                                        Hospitality
+                                    </option>
+                                    <option value="automotive">
+                                        Automotive
+                                    </option>
+                                    <option value="medical">Medical</option>
+                                    <option value="professional office">
+                                        Professional Office
+                                    </option>
+                                    <option value="real-estate-property-mgmt">
+                                        Real Estate/Property Mgmt.
+                                    </option>
+                                    <option value="other">Other</option>
+                                </select>
                             </label>
-                            <label htmlFor="reply_to">
+                            <label htmlFor="services_needed">
                                 What services are you interested in?
-                                <input
-                                    type="select"
-                                    id=""
-                                    name=""
-                                    // value={formData["reply_to"]}
-                                    // onChange={handleChange}
-                                    placeholder="Select"
+                                <select
+                                    id="services_needed"
+                                    name="services_needed"
+                                    // value={formData["services_needed"]}
                                     required
                                     aria-label="What services are you interested in?"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
-                                ></input>
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white *:text-dark-gray"
+                                >
+                                    <option value="" disabled selected>
+                                        Select Service
+                                    </option>
+                                    <option value="general-janitorial">
+                                        General Janitorial
+                                    </option>
+                                    <option value="carpet-care">
+                                        Carpet Care
+                                    </option>
+                                    <option value="hard-surface-floor-care">
+                                        Hard-Surface Floor Care
+                                    </option>
+                                    <option value="windows-glass">
+                                        Windows/Glass
+                                    </option>
+                                    <option value="spring-seasonal-cleaning">
+                                        Spring/Seasonal Cleaning
+                                    </option>
+                                    <option value="specialty-service">
+                                        Specialty Service
+                                    </option>
+                                    <option value="other">Other</option>
+                                </select>
                             </label>
                         </div>
                         <div className="col-span-2">
@@ -189,7 +234,7 @@ export default function Contact() {
                                     // onChange={handleChange}
 
                                     required
-                                    aria-label="Message input"
+                                    aria-label="Message"
                                     rows={4}
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
                                 ></textarea>
@@ -213,9 +258,4 @@ export default function Contact() {
             </section>
         </main>
     );
-}
-{
-    /* <div className="grid grid-rows-subgrid gap-5 xl:gap-7 row-span-2">
-                                
-                            </div> */
 }

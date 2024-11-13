@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Banner } from "../_components";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     return (
@@ -71,7 +71,7 @@ export default function Contact() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px]">
-                <article className="relative mt-2">
+                <article className="relative mt-2 drop-shadow-lg">
                     <figure>
                         <Image
                             src="/office-buildings.jpg"
@@ -92,7 +92,7 @@ export default function Contact() {
                                     // onChange={handleChange}
                                     required
                                     aria-label="Name"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
                                 />
                             </label>
                             <label htmlFor="reply_to">
@@ -105,7 +105,7 @@ export default function Contact() {
                                     // onChange={handleChange}
                                     required
                                     aria-label="Email"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
                                 ></input>
                             </label>
                             <label htmlFor="phone_number">
@@ -118,7 +118,7 @@ export default function Contact() {
                                     // onChange={handleChange}
                                     required
                                     aria-label="Phone number"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
                                 ></input>
                             </label>
                             <label htmlFor="business_name">
@@ -131,7 +131,7 @@ export default function Contact() {
                                     // onChange={handleChange}
                                     required
                                     aria-label="Business or company name"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
                                 ></input>
                             </label>
                             <label htmlFor="address">
@@ -144,7 +144,7 @@ export default function Contact() {
                                     // onChange={handleChange}
                                     required
                                     aria-label="Physical Address"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
                                 ></input>
                             </label>
                         </div>
@@ -157,7 +157,7 @@ export default function Contact() {
                                     // value={formData["industry_type"]}
                                     required
                                     aria-label="Industry Type"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white *:text-dark-gray"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
                                 >
                                     <option value="" disabled selected>
                                         Select Industry
@@ -197,7 +197,7 @@ export default function Contact() {
                                     // value={formData["services_needed"]}
                                     required
                                     aria-label="What services are you interested in?"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white *:text-dark-gray"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
                                 >
                                     <option value="" disabled selected>
                                         Select Service
@@ -232,11 +232,10 @@ export default function Contact() {
                                     name="message"
                                     // value={formData["reply_to"]}
                                     // onChange={handleChange}
-
                                     required
                                     aria-label="Message"
                                     rows={4}
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white"
+                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
                                 ></textarea>
                             </label>
                         </div>
@@ -244,7 +243,7 @@ export default function Contact() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px]">
-                <article className="w-full mt-2">
+                <article className="w-full mt-2 mb-5 drop-shadow-lg">
                     <iframe
                         className="aspect-video h-full min-h-[545px] lg:min-h-[650px] max-h-[800px] xl:max-h-[900px] rounded-xl"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.0390909054245!2d-79.38554292325173!3d40.31928997145544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834cd4d7433928d%3A0x230fc3511100926c!2sRolling%20Hills%20Industries!5e0!3m2!1sen!2sus!4v1730999364494!5m2!1sen!2sus"

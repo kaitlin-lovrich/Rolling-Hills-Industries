@@ -15,11 +15,11 @@ export default function JanitorialServices() {
                 </div>
             </Banner>
             <section className="mx-auto w-[95%] max-w-[1400px] lg:mt-4">
-                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 text-center text-dark-gray w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
-                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 text-center text-dark-gray w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
+                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl px-5 lg:px-0">
                         Top-Quality Janitorial Services
                     </h2>
-                    <div className="flex flex-col gap-3 xl:gap-5">
+                    <div className="flex flex-col gap-3 xl:gap-5 px-5 lg:px-0">
                         <p>
                             When you hire Rolling Hills Industries Inc for
                             janitorial services, you can rest assured knowing
@@ -44,7 +44,7 @@ export default function JanitorialServices() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px] relative">
-                <figure className="relative w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:rounded-xl">
+                <figure className="relative mt-2 drop-shadow-lg w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:rounded-xl">
                     <Image
                         src="/person-taking-care-office-cleaning.jpg"
                         alt="Person taking care office cleaning"
@@ -140,8 +140,8 @@ export default function JanitorialServices() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px]">
-                <article className="flex justify-center">
-                    <div className="w-[95%] max-w-[1300px] sm:w-[90%] lg:w-[90%]">
+                <article className="flex justify-center mt-2 mb-5 drop-shadow-lg">
+                    <div className="w-[95%] sm:w-[90%]">
                         <Video />
                     </div>
                 </article>

@@ -70,7 +70,7 @@ export default function About() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px]">
-                <article className="w-full">
+                <article className="w-full mt-2 mb-5 drop-shadow-lg">
                     <iframe
                         className="aspect-video h-full min-h-[545px] lg:min-h-[650px] max-h-[800px] xl:max-h-[900px] rounded-xl"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.0390909054245!2d-79.38554292325173!3d40.31928997145544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834cd4d7433928d%3A0x230fc3511100926c!2sRolling%20Hills%20Industries!5e0!3m2!1sen!2sus!4v1730999364494!5m2!1sen!2sus"

@@ -18,11 +18,11 @@ export default function Contact() {
                 </div>
             </Banner>
             <section className="flex flex-col mx-auto w-[95%] max-w-[1400px] gap-10 xl:gap-14 lg:mt-4">
-                <article className="flex flex-col justify-center items-center px-5 lg:px-0  gap-5 lg:gap-7 xl:gap-10 w-full sm:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full m:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Contact Rolling Hills Industries Inc Today
                     </h2>
-                    <div className="flex justify-around items-start gap-5 sm:gap-9 lg:gap-14 xl:gap-16 px-5 lg:px-0 w-full *:leading-relaxed text-start">
+                    <div className="flex flex-col sm:flex-row justify-around items-start gap-5 sm:gap-9 lg:gap-14 xl:gap-16 lg:px-0 w-full *:leading-relaxed text-start">
                         <div className="flex flex-col gap-3 sm:gap-5">
                             <h3 className="text-navy-blue font-bold text-xl lg:text-2xl xl:text-3xl">
                                 Rolling Hills Industries Inc
@@ -53,7 +53,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </article>
-                <article className="flex flex-col justify-center items-center px-5 lg:px-0  gap-5 lg:gap-7 xl:gap-10 w-full sm:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full md:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Contact Us for a Free Estimate!
                     </h2>

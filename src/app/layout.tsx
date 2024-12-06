@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inria_Sans } from "next/font/google";
 import "./globals.css";
-import { Footer, Header } from "./_components/index";
+import { Footer, Header, ContactBanner } from "./_components/index";
 
 const inriaSans = Inria_Sans({
     weight: ["300", "400", "700"],
@@ -49,6 +49,7 @@ export default function RootLayout({
             >
                 <Header />
                 {children}
+                <ContactBanner />
                 <Footer />
             </body>
         </html>

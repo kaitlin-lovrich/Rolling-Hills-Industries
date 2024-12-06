@@ -1,10 +1,106 @@
 "use client";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Banner } from "../_components";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
+import { Window } from "../_utilities";
+import { FaPaperPlane } from "react-icons/fa";
 
 export default function Contact() {
+    const [isMounted, setIsMounted] = useState(false);
+    const [formData, setFormData] = useState({
+        "from_name": "",
+        "reply_to": "",
+        "phone_number": "",
+        "business_name": "",
+        "address": "",
+        "industry_type": "",
+        "services_needed": "",
+        message: "",
+    });
+    const [status, setStatus] = useState("");
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const myPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    const reSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+
+    useEffect(() => {
+        setIsMounted(true);
+        emailjs.init(myPublicKey!);
+    }, [myPublicKey]);
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }, 100);
+
+        const script = document.createElement("script");
+        script.src = `https://www.google.com/recaptcha/api.js`;
+        script.defer = true;
+        document.body.appendChild(script);
+
+        return () => {
+            clearTimeout(timeoutId);
+        };
+    }, []);
+
+    function handleChange(
+        e: React.ChangeEvent<
+            HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+        >
+    ) {
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: value,
+        }));
+    }
+
+    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        const recaptchaResponse = (
+            window as unknown as Window
+        ).grecaptcha.getResponse();
+
+        if (!recaptchaResponse) {
+            setStatus("Please complete the reCAPTCHA.");
+            return;
+        }
+        async function submitForm() {
+            try {
+                const response = await emailjs.sendForm(
+                    serviceId!,
+                    templateId!,
+                    e.target as HTMLFormElement,
+                    {
+                        publicKey: myPublicKey,
+                    }
+                );
+                if (response.status !== 200) {
+                    throw new Error("Email service returned an error."); // Throw an error to be caught below
+                }
+                setStatus("Message sent successfully!");
+                setFormData({
+                    "from_name": "",
+                    "reply_to": "",
+                    "phone_number": "",
+                    "business_name": "",
+                    "address": "",
+                    "industry_type": "",
+                    "services_needed": "",
+                    message: "",
+                });
+                (window as unknown as Window).grecaptcha.reset();
+            } catch {
+                setStatus("Failed to send message.");
+            }
+        }
+        submitForm();
+    }
+
     return (
         <main className="flex flex-col gap-10 xl:gap-14 min-h-screen">
             <Banner
@@ -17,7 +113,11 @@ export default function Contact() {
                     </div>
                 </div>
             </Banner>
-            <section className="flex flex-col mx-auto w-[95%] max-w-[1400px] gap-10 xl:gap-14 lg:mt-4">
+            <section
+                className={`flex flex-col mx-auto w-[95%] max-w-[1400px] gap-10 xl:gap-14 lg:mt-4 transition opacity transform duration-500 ${
+                    isMounted ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                }`}
+            >
                 <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full m:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Contact Rolling Hills Industries Inc Today
@@ -80,7 +180,10 @@ export default function Contact() {
                             className="rounded-xl"
                         />
                     </figure>
-                    <form className="relative flex flex-col gap-5 xl:gap-7 py-6 xl:py-11 2xl:py-14 px-5 xl:px-7 text-white text-lg font-semibold bg-diagonal-light-blue-to-navy rounded-xl">
+                    <form
+                        onSubmit={handleSubmit}
+                        className="relative flex flex-col gap-5 xl:gap-7 py-6 xl:py-11 2xl:py-14 px-5 xl:px-7 text-white text-lg font-semibold bg-diagonal-light-blue-to-navy rounded-xl"
+                    >
                         <div className="grid sm:grid-cols-2 gap-5 xl:gap-7 ">
                             <label htmlFor="from_name">
                                 Your Name (required)
@@ -88,8 +191,8 @@ export default function Contact() {
                                     type="text"
                                     id="from_name"
                                     name="from_name"
-                                    // value={formData["from_name"]}
-                                    // onChange={handleChange}
+                                    value={formData["from_name"]}
+                                    onChange={handleChange}
                                     required
                                     aria-label="Name"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
@@ -101,8 +204,8 @@ export default function Contact() {
                                     type="email"
                                     id="reply_to"
                                     name="reply_to"
-                                    // value={formData["reply_to"]}
-                                    // onChange={handleChange}
+                                    value={formData["reply_to"]}
+                                    onChange={handleChange}
                                     required
                                     aria-label="Email"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
@@ -114,8 +217,8 @@ export default function Contact() {
                                     type="tel"
                                     id="phone_number"
                                     name="phone_number"
-                                    // value={formData["phone_number"]}
-                                    // onChange={handleChange}
+                                    value={formData["phone_number"]}
+                                    onChange={handleChange}
                                     required
                                     aria-label="Phone number"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
@@ -127,8 +230,8 @@ export default function Contact() {
                                     type="text"
                                     id="business_name"
                                     name="business_name"
-                                    // value={formData["business_name"]}
-                                    // onChange={handleChange}
+                                    value={formData["business_name"]}
+                                    onChange={handleChange}
                                     required
                                     aria-label="Business or company name"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
@@ -140,8 +243,8 @@ export default function Contact() {
                                     type="text"
                                     id="address"
                                     name="address"
-                                    // value={formData["address"]}
-                                    // onChange={handleChange}
+                                    value={formData["address"]}
+                                    onChange={handleChange}
                                     required
                                     aria-label="Physical Address"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
@@ -154,7 +257,8 @@ export default function Contact() {
                                 <select
                                     id="industry_type"
                                     name="industry_type"
-                                    // value={formData["industry_type"]}
+                                    value={formData["industry_type"]}
+                                    onChange={handleChange}
                                     required
                                     aria-label="Industry Type"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
@@ -194,7 +298,8 @@ export default function Contact() {
                                 <select
                                     id="services_needed"
                                     name="services_needed"
-                                    // value={formData["services_needed"]}
+                                    value={formData["services_needed"]}
+                                    onChange={handleChange}
                                     required
                                     aria-label="What services are you interested in?"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
@@ -230,8 +335,8 @@ export default function Contact() {
                                 <textarea
                                     id="message"
                                     name="message"
-                                    // value={formData["reply_to"]}
-                                    // onChange={handleChange}
+                                    value={formData["message"]}
+                                    onChange={handleChange}
                                     required
                                     aria-label="Message"
                                     rows={4}
@@ -239,6 +344,18 @@ export default function Contact() {
                                 ></textarea>
                             </label>
                         </div>
+                        <div
+                            className="g-recaptcha"
+                            data-sitekey={reSiteKey}
+                        ></div>
+                        <button
+                            className="*:size-6 absolute top-56 lg:top-40 xl:top-[185px] right-3 text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
+                            type="submit"
+                            aria-label="Submit"
+                        >
+                            <FaPaperPlane />
+                        </button>
+                        {status && <p>{status}</p>}
                     </form>
                 </article>
             </section>

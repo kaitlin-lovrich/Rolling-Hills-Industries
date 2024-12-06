@@ -51,3 +51,12 @@ export type CleaningProduct = {
 export type EmployeeBenefit = {
     name: string;
 };
+
+export interface Window {
+    grecaptcha: Grecaptcha;
+}
+
+export interface Grecaptcha {
+    getResponse: (opt_widget_id?: string) => string;
+    reset: (opt_widget_id?: string) => void;
+}

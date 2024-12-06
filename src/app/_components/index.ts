@@ -9,3 +9,4 @@ export * from "./FooterNavigation";
 export * from "./BusinessCard";
 export * from "./ClientList";
 export * from "./Video";
+export * from "./ContactBanner";

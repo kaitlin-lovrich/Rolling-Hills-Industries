@@ -70,3 +70,23 @@ body {
         animation-play-state: paused;
     }
 }
+
+/* Target the background color of the input when autofilled */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset;
+    box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset;
+    -webkit-text-fill-color: #ffffff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Ensure the outline remains consistent */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    border: none;
+}

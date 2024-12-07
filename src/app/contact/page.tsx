@@ -261,7 +261,7 @@ export default function Contact() {
                                     onChange={handleChange}
                                     required
                                     aria-label="Industry Type"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
+                                    className="w-full p-3 sm:p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
                                 >
                                     <option value="" disabled>
                                         Select Industry
@@ -302,7 +302,7 @@ export default function Contact() {
                                     onChange={handleChange}
                                     required
                                     aria-label="What services are you interested in?"
-                                    className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
+                                    className="w-full p-3 sm:p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
                                 >
                                     <option value="" disabled>
                                         Select Service
@@ -349,7 +349,7 @@ export default function Contact() {
                             data-sitekey={reSiteKey}
                         ></div>
                         <button
-                            className="*:size-6 absolute top-[785px] sm:top-[600px] md:top-[513px] xl:top-[605px] 2xl:top-[615px] right-[31px] xl:right-[37px] text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
+                            className="*:size-6 absolute top-[780px] sm:top-[600px] md:top-[513px] xl:top-[605px] 2xl:top-[615px] right-[31px] xl:right-[37px] text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
                             type="submit"
                             aria-label="Submit"
                         >

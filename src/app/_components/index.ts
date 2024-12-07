@@ -10,3 +10,4 @@ export * from "./BusinessCard";
 export * from "./ClientList";
 export * from "./Video";
 export * from "./ContactBanner";
+export * from "./ClientLayout";

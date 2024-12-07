@@ -60,3 +60,12 @@ export interface Grecaptcha {
     getResponse: (opt_widget_id?: string) => string;
     reset: (opt_widget_id?: string) => void;
 }
+
+export interface FooterProps {
+    ref: React.RefObject<HTMLDivElement>;
+}
+
+export interface ContactBannerProps {
+    isOverFooter: boolean;
+    scrollDirection: string | null;
+}

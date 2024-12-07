@@ -27,8 +27,7 @@ export default function Contact() {
     useEffect(() => {
         setIsMounted(true);
         emailjs.init(myPublicKey!);
-        console.log(reSiteKey);
-    }, [myPublicKey, reSiteKey]);
+    }, [myPublicKey]);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {

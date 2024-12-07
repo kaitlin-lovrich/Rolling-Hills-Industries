@@ -263,7 +263,7 @@ export default function Contact() {
                                     aria-label="Industry Type"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
                                 >
-                                    <option value="" disabled selected>
+                                    <option value="" disabled>
                                         Select Industry
                                     </option>
                                     <option value="manufacturing">
@@ -304,7 +304,7 @@ export default function Contact() {
                                     aria-label="What services are you interested in?"
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
                                 >
-                                    <option value="" disabled selected>
+                                    <option value="" disabled>
                                         Select Service
                                     </option>
                                     <option value="general-janitorial">

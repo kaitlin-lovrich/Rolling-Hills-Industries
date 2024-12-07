@@ -329,7 +329,7 @@ export default function Contact() {
                                 </select>
                             </label>
                         </div>
-                        <div className="col-span-2 relative">
+                        <div className="col-span-2">
                             <label htmlFor="message">
                                 Please Describe Your Facility
                                 <textarea
@@ -345,7 +345,7 @@ export default function Contact() {
                             </label>
                         </div>
                         <button
-                            className="*:size-6 absolute bottom-[59px] right-[30px] text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
+                            className="*:size-6 relative *:absolute *:bottom-[34px] *:right-[10px] text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
                             type="submit"
                             aria-label="Submit"
                         >

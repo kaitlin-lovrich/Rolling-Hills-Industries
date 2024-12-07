@@ -329,7 +329,7 @@ export default function Contact() {
                                 </select>
                             </label>
                         </div>
-                        <div className="col-span-2 relative">
+                        <div className="col-span-2">
                             <label htmlFor="message">
                                 Please Describe Your Facility
                                 <textarea
@@ -343,14 +343,14 @@ export default function Contact() {
                                     className="w-full p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg"
                                 ></textarea>
                             </label>
-                            <button
-                                className="*:size-6 absolute bottom-[15px] right-[10px] text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
-                                type="submit"
-                                aria-label="Submit"
-                            >
-                                <FaPaperPlane />
-                            </button>
                         </div>
+                        <button
+                            className="*:size-6 relative *:absolute *:bottom-[34px] *:right-[10px] text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
+                            type="submit"
+                            aria-label="Submit"
+                        >
+                            <FaPaperPlane />
+                        </button>
                         <div
                             className="g-recaptcha"
                             data-sitekey={reSiteKey}

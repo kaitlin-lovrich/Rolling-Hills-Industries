@@ -4,11 +4,12 @@ import Link from "next/link";
 import { BsFacebook } from "react-icons/bs";
 import { Button, FooterNavigation } from ".";
 import { usePathname } from "next/navigation";
+import { FooterProps } from "../_utilities";
 
-export function Footer() {
+export function Footer({ ref }: FooterProps) {
     const pathName = usePathname();
     return (
-        <footer className="">
+        <footer ref={ref}>
             <figure className="relative z-10 w-full h-[25rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem]">
                 <Image src="/skyline.jpg" alt="city skyline" fill={true} />
                 <div className="absolute z-20 w-full h-full bg-footer-image-overlay-1 "></div>

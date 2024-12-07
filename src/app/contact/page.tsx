@@ -344,17 +344,17 @@ export default function Contact() {
                                 ></textarea>
                             </label>
                         </div>
+                        <div
+                            className="g-recaptcha"
+                            data-sitekey={reSiteKey}
+                        ></div>
                         <button
-                            className="*:size-6 relative *:absolute *:bottom-[34px] *:right-[10px] text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
+                            className="*:size-6 absolute top-[785px] sm:top-[600px] md:top-[513px] xl:top-[605px] right-[31px] xl:right-[37px] text-xl hover:cursor-pointer hover:scale-110 transition transform duration-300 ease-in-out text-white hover:text-yellow"
                             type="submit"
                             aria-label="Submit"
                         >
                             <FaPaperPlane />
                         </button>
-                        <div
-                            className="g-recaptcha"
-                            data-sitekey={reSiteKey}
-                        ></div>
                         {status && <p>{status}</p>}
                     </form>
                 </article>

@@ -24,6 +24,8 @@ export function Header() {
         };
     }, []);
 
+    const closeMenu = () => setIsModalOpen(false);
+
     return (
         <header
             className={`w-full bg-white sticky top-0 z-40 drop-shadow-md duration-500 ease-in-out transition opacity transform`}
@@ -69,7 +71,12 @@ export function Header() {
                         />
                     </span>
 
-                    {isModalOpen && <MobileNavigation pathName={pathName} />}
+                    {isModalOpen && (
+                        <MobileNavigation
+                            pathName={pathName}
+                            closeMenu={closeMenu}
+                        />
+                    )}
                 </nav>
             </div>
         </header>

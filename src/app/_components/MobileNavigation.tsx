@@ -3,9 +3,10 @@ import Link from "next/link";
 import { pageNames, hrefToTitle, NavigationProps } from "../_utilities";
 import { useEffect, useState } from "react";
 
-export function MobileNavigation({ pathName }: NavigationProps) {
+export function MobileNavigation({ pathName, closeMenu }: NavigationProps) {
     const [isMounted, setIsMounted] = useState(false);
     const [delayLoading, setDelayLoading] = useState(true);
+    const [isClosing, setIsClosing] = useState(false);
 
     useEffect(() => {
         setIsMounted(true);
@@ -21,15 +22,23 @@ export function MobileNavigation({ pathName }: NavigationProps) {
         };
     }, []);
 
+    const handleClose = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            if (closeMenu) closeMenu();
+        }, 100);
+    };
+
     return (
-        <>
-            <ul
-                className={`lg:hidden flex flex-col fixed z-40 w-screen h-screen top-0 right-0 bg-transparent-navy-blue-gradient gap-8 pt-36 pr-7 text-end text-white text-xl duration-500  transition opacity transform ${
-                    isMounted
-                        ? "translate-x-0 opacity-100"
-                        : "translate-x-full opacity-0"
-                }`}
-            >
+        <div
+            onClick={handleClose}
+            className={`lg:hidden fixed z-40 w-screen h-screen top-0 right-0 bg-transparent-navy-blue-gradient text-white text-xl duration-500  transition opacity transform ${
+                isMounted
+                    ? "translate-x-0 opacity-100"
+                    : "translate-x-full opacity-0"
+            } ${isClosing ? "translate-x-full opacity-0" : ""}`}
+        >
+            <ul className="flex flex-col gap-8 pt-36 pr-7 text-end">
                 {pageNames.map((page) => (
                     <li key={page}>
                         <Link
@@ -47,6 +56,6 @@ export function MobileNavigation({ pathName }: NavigationProps) {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 }

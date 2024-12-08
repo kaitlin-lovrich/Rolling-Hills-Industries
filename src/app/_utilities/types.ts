@@ -22,6 +22,7 @@ export interface ButtonProps {
 export interface NavigationProps {
     isScrolledToTop?: boolean;
     pathName: string;
+    closeMenu?: () => void;
 }
 
 export interface AnimatedMenuIconProps {

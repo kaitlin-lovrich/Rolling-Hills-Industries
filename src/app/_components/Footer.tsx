@@ -87,7 +87,10 @@ export function Footer({ ref }: FooterProps) {
                             rights Reserved.
                         </p>
                         <p className="*:duration-300 *:ease-out">
-                            <Link href="#" className="hover:text-yellow">
+                            <Link
+                                href="/privacy-policy"
+                                className="hover:text-yellow"
+                            >
                                 Privacy Policy
                             </Link>{" "}
                             |{" "}

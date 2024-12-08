@@ -3,9 +3,10 @@ import Link from "next/link";
 import { pageNames, hrefToTitle, NavigationProps } from "../_utilities";
 import { useEffect, useState } from "react";
 
-export function MobileNavigation({ pathName }: NavigationProps) {
+export function MobileNavigation({ pathName, closeMenu }: NavigationProps) {
     const [isMounted, setIsMounted] = useState(false);
     const [delayLoading, setDelayLoading] = useState(true);
+    const [isClosing, setIsClosing] = useState(false);
 
     useEffect(() => {
         setIsMounted(true);
@@ -21,6 +22,13 @@ export function MobileNavigation({ pathName }: NavigationProps) {
         };
     }, []);
 
+    const handleClose = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            if (closeMenu) closeMenu();
+        }, 100);
+    };
+
     return (
         <>
             <ul
@@ -28,12 +36,13 @@ export function MobileNavigation({ pathName }: NavigationProps) {
                     isMounted
                         ? "translate-x-0 opacity-100"
                         : "translate-x-full opacity-0"
-                }`}
+                } ${isClosing ? "translate-x-full opacity-0" : ""}`}
             >
                 {pageNames.map((page) => (
                     <li key={page}>
                         <Link
                             href={hrefToTitle[page]}
+                            onClick={handleClose}
                             className={`duration-1000 ease-in-out transition opacity transform ${
                                 delayLoading ? "opacity-0" : "opacity-100"
                             } ${

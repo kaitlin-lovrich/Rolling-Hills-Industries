@@ -84,6 +84,18 @@ export default function PrivacyPolicy() {
                             You will be prompted to accept or decline tracking
                             when you visit this site.
                         </p>
+                        <p>
+                            See{" "}
+                            <a
+                                href="https://business.safety.google/privacy/"
+                                aria-label="How Google processes personal information"
+                                className="underline decoration-yellow decoration-4 underline-offset-4 text-navy-blue font-bold"
+                            >
+                                Google&apos;s Business Data Responsibility Site
+                            </a>{" "}
+                            to learn more about how Google processes personal
+                            information
+                        </p>
                     </div>
                 </article>
             </section>

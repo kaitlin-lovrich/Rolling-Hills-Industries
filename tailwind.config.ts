@@ -24,6 +24,8 @@ const config: Config = {
                 "linear-gradient(to bottom, rgba(3, 41, 84, .25) 0%, rgba(232, 169, 39, .25) 100%)",
             "diagonal-light-blue-to-navy":
                 "linear-gradient(to bottom right, rgba(99, 129, 179, .90) 0%, rgba(27, 63, 107, .90) 50%, rgba(3, 41, 84, .90) 100%)",
+            "transparent-dark-blue-gradient":
+                "linear-gradient(to bottom, rgba(3, 41, 84, 0) 0%, rgba(3, 41, 84, 0) 80%, rgba(3, 41, 84, .60) 90%, rgba(3, 41, 84, .95) 100%)",
         },
         extend: {
             colors: {

@@ -94,7 +94,11 @@ export function Footer({ ref }: FooterProps) {
                                 Privacy Policy
                             </Link>{" "}
                             |{" "}
-                            <Link href="#" className="hover:text-yellow">
+                            <Link
+                                href="/photo-credits
+                            "
+                                className="hover:text-yellow"
+                            >
                                 Photo Credits
                             </Link>
                         </p>

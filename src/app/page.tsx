@@ -19,34 +19,36 @@ export default function Home() {
                     2022
                 </span>
             </Banner>
-            <section className="w-full relative h-[45rem] sm:h-[55rem] md:h-[40rem] lg:h-[45rem] xl:h-[55rem] 2xl:h-[65rem]">
-                <Image
-                    src="/man-holding-cleaning-supplies.jpg"
-                    alt="Man in uniform holding commercial cleaning supplies"
-                    fill={true}
-                    priority={true}
-                    className="opacity-50"
-                />
+            <section className="">
+                <figure className="relative w-full">
+                    <Image
+                        src="/man-holding-cleaning-supplies.jpg"
+                        alt="Man in uniform holding commercial cleaning supplies"
+                        fill={true}
+                        priority={true}
+                        className="opacity-50"
+                    />
 
-                <article className="w-full h-full bg-navy-blue/75 absolute flex flex-col justify-center items-center text-center gap-8 sm:gap-10 lg:gap-16 xl:gap-20">
-                    <h2 className="text-white font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
-                        We Offer Commercial Cleaning Services
-                    </h2>
-                    <div className="grid grid-cols-2 md:grid-cols-3 justify-items-center xl:w-[65%] max-w-[1400px] gap-x-7 sm:gap-x-20 lg:gap-x-32 gap-y-7 sm:gap-y-10 lg:gap-y-16 xl:gap-y-24">
-                        {businessesServiced.map((business, index) => (
-                            <BusinessCard business={business} key={index} />
-                        ))}
-                    </div>
-                </article>
+                    <article className="relative w-full h-full bg-navy-blue/75 flex flex-col justify-center items-center text-center py-9 xl:py-16 gap-5 lg:gap-7 xl:gap-10">
+                        <h2 className="text-white font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
+                            We Offer Commercial Cleaning Services
+                        </h2>
+                        <div className="grid grid-cols-2 min-[420px]:grid-cols-3 justify-items-center 2xl:w-[70%] max-w-[90%] sm:max-w-[85%] xl:max-w-[1000px] gap-x-7 sm:gap-x-14 md:gap-x-14 lg:gap-x-20 gap-y-7 sm:gap-y-12 md:gap-y-12 lg:gap-y-16">
+                            {businessesServiced.map((business, index) => (
+                                <BusinessCard business={business} key={index} />
+                            ))}
+                        </div>
+                    </article>
+                </figure>
             </section>
-            <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-11 sm:py-14 lg:py-28 xl:py-32 bg-gray-blue-yellow-gradient">
-                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+            <section className="mx-auto w-[95%] max-w-[1400px]">
+                <article className="flex flex-col gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 py-9 xl:py-16 bg-gray-blue-yellow-gradient">
+                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Our Mission Is To Go Beyond Cleaning
                     </h2>
                     <div className="flex flex-col-reverse xl:flex-row gap-8 w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
-                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray gap-8 xl:gap-0">
-                            <div className="flex flex-col gap-5">
+                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start gap-8 xl:gap-0">
+                            <div className="flex flex-col gap-3 xl:gap-5">
                                 <p>
                                     Rolling Hills Industries&apos; value to you
                                     is defined by the high quality we bring to
@@ -70,7 +72,7 @@ export default function Home() {
                                 <Button text={"LEARN MORE"} />
                             </div>
                         </div>
-                        <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[650px] xl:w-1/2 xl:max-w-full 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
+                        <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[550px] xl:w-1/2 xl:max-w-[600px] 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
                             <Image
                                 src="/professional-cleaner-showing-approval.jpg"
                                 alt="Smiling professional cleaner in uniform giving a thumbs up"
@@ -81,13 +83,13 @@ export default function Home() {
                     </div>
                 </article>
             </section>
-            <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-11 sm:py-14 lg:py-28 xl:py-32">
-                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+            <section className="mx-auto w-[95%] max-w-[1400px]">
+                <article className="flex flex-col gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 py-9 xl:py-16">
+                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Top-Quality Cleaning Supplies Used
                     </h2>
                     <div className="flex flex-col xl:flex-row gap-8 w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
-                        <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[650px] xl:w-1/2 xl:max-w-full 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
+                        <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[550px] xl:w-1/2 xl:max-w-[600px] 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
                             <Image
                                 src="/quality-cleaning-supplies.jpg"
                                 alt="Quality cleaning supplies"
@@ -95,8 +97,8 @@ export default function Home() {
                                 className="rounded-xl"
                             />
                         </div>
-                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray gap-8 xl:gap-0 ">
-                            <div className="flex flex-col gap-5">
+                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start gap-8 xl:gap-0 ">
+                            <div className="flex flex-col gap-3 xl:gap-5">
                                 <p>
                                     When you need janitorial and cleaning
                                     supplies to beautify and clean your
@@ -120,14 +122,14 @@ export default function Home() {
                     </div>
                 </article>
             </section>
-            <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-11 sm:py-14 lg:py-28 xl:py-32 bg-off-white">
-                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+            <section className="mx-auto w-[95%] max-w-[1400px]">
+                <article className="flex flex-col gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 py-9 xl:py-16 bg-off-white">
+                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Reliable Janitorial Services
                     </h2>
                     <div className="flex flex-col-reverse xl:flex-row gap-8 w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
-                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start text-dark-gray gap-8 xl:gap-0 ">
-                            <div className="flex flex-col gap-5">
+                        <div className="flex flex-col justify-around items-center w-full xl:w-1/2 text-center xl:text-start gap-8 xl:gap-0 ">
+                            <div className="flex flex-col gap-3 xl:gap-5">
                                 <p>
                                     Rolling Hills Industries serves businesses
                                     and organizations in Westmoreland, Indiana
@@ -146,7 +148,7 @@ export default function Home() {
                                 <Button text={"LEARN MORE"} />
                             </div>
                         </div>
-                        <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[650px] xl:w-1/2 xl:max-w-full 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
+                        <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[550px] xl:w-1/2 xl:max-w-[600px] 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
                             <Image
                                 src="/reliable-janitorial-service.jpg"
                                 alt="Reliable janitorial service"
@@ -157,12 +159,12 @@ export default function Home() {
                     </div>
                 </article>
             </section>
-            <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col text-center gap-8 sm:gap-10 lg:gap-16 xl:gap-20 px-5 lg:px-0 py-11 sm:py-14 lg:py-28 xl:py-32 overflow-hidden">
-                    <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+            <section className="mx-auto w-[95%]">
+                <article className="flex flex-col text-center gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 py-9 xl:py-16 overflow-hidden">
+                    <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Our Clients
                     </h2>
-                    <p className="text-dark-gray w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
+                    <p className="w-full max-w-[1400px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto">
                         Rolling Hills offers dependable and professional
                         cleaning and janitorial services for any business or
                         organization in Westmoreland, Indiana, and surrounding
@@ -173,9 +175,9 @@ export default function Home() {
                     </div>
                 </article>
             </section>
-            <section className="mx-auto w-[95%] max-w-[1800px]">
-                <article className="flex flex-col justify-center items-center py-11 sm:py-14 lg:py-28 xl:py-32">
-                    <div className="w-[95%] max-w-[1300px] sm:w-[90%] lg:w-[90%]">
+            <section className="mx-auto w-[95%] max-w-[1400px]">
+                <article className="flex flex-col justify-center items-center pt-5 xl:pt-11">
+                    <div className="w-[95%] max-w-[1400px] sm:w-[90%] lg:w-[90%]">
                         <Video />
                     </div>
                 </article>

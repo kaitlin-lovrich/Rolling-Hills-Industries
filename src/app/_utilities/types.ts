@@ -45,6 +45,13 @@ export type Client = {
     alt: string;
 };
 
+export type Photo = {
+    imageSrc: string;
+    alt: string;
+    href: string;
+    credit: string;
+};
+
 export type CleaningProduct = {
     name: string;
 };

@@ -28,7 +28,7 @@ export function Header() {
 
     return (
         <header
-            className={`w-full bg-white sticky top-0 z-40 drop-shadow-md duration-500 ease-in-out transition opacity transform`}
+            className={`w-full bg-white sticky top-0 z-40 drop-shadow-md duration-500 ease-in-out transition opacity transform text-navy-blue`}
         >
             <PromoBanner />
             <div className="flex justify-between items-center mr-4">

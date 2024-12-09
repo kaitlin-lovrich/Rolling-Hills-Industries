@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
                             experience, design, and content.
                         </p>
 
-                        <h2 className="text-xl sm:text-2xl xl:text-3xl font-bold">
+                        <h2 className="text-navy-blue text-xl sm:text-2xl xl:text-3xl font-bold">
                             Data Privacy and Your Rights
                         </h2>
 
@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
                                 <a
                                     href="https://tools.google.com/dlpage/gaoptout"
                                     aria-label="Google Analytics Opt-out Browser Add-on"
-                                    className="underline decoration-yellow decoration-4 underline-offset-4 text-navy-blue font-bold"
+                                    className="hover:underline hover:decoration-yellow decoration-4 underline-offset-4 text-navy-blue font-bold"
                                 >
                                     Google Analytics opt-out browser add-on
                                 </a>
@@ -89,7 +89,7 @@ export default function PrivacyPolicy() {
                             <a
                                 href="https://business.safety.google/privacy/"
                                 aria-label="How Google processes personal information"
-                                className="underline decoration-yellow decoration-4 underline-offset-4 text-navy-blue font-bold"
+                                className="hover:underline hover:decoration-yellow decoration-4 underline-offset-4 text-navy-blue font-bold"
                             >
                                 Google&apos;s Business Data Responsibility Site
                             </a>{" "}

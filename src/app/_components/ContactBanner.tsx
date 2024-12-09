@@ -36,7 +36,7 @@ export function ContactBanner({
 
     return (
         <div
-            className={`fixed z-50 bottom-0 right-4 bg-white border-[1px] border-navy-blue text-navy-blue rounded-t-xl w-[85%] max-w-[340px] sm:w-[400px] sm:max-w-full drop-shadow-lg duration-300 transition transform ${
+            className={`fixed z-40 bottom-0 right-4 bg-white border-[1px] border-navy-blue text-navy-blue rounded-t-xl w-[85%] max-w-[340px] sm:w-[400px] sm:max-w-full drop-shadow-lg duration-300 transition transform ${
                 isMounted ? "-translate-y-0" : "translate-y-full"
             } ${
                 showBanner

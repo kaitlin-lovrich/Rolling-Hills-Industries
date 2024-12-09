@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Header, ContactBanner, Footer } from ".";
+import { Header, CookieConsentBanner, ContactBanner, Footer } from ".";
 
 export function ClientLayout({
     children,
@@ -59,6 +59,7 @@ export function ClientLayout({
         <>
             <Header />
             {children}
+            <CookieConsentBanner />
             <ContactBanner
                 isOverFooter={isContactOverFooter}
                 scrollDirection={scrollDirection}

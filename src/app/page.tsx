@@ -1,6 +1,7 @@
 import { businessesServiced } from "./_utilities";
 import { Banner, Button, BusinessCard, ClientList, Video } from "./_components";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -11,9 +12,12 @@ export default function Home() {
                 isHomePage={true}
             >
                 <h1>ROLLING HILLS COMMERCIAL CLEANING SERVICES</h1>
-                <div className="text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-3 *:xl:py-4  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-14  *:*:pr-1.5 *:*:sm:pr-4">
+                <Link
+                    href="#"
+                    className="text-lg sm:text-2xl xl:text-3xl *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-3 *:xl:py-4  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11  *:*:pr-1.5 *:*:sm:pr-4"
+                >
                     <Button text={"BOOK A FREE ON-SITE ESTIMATE"} />
-                </div>
+                </Link>
                 <span>
                     Cleaning Western PA Since 1986, Proudly Employee Owned Since
                     2022
@@ -68,9 +72,12 @@ export default function Home() {
                                     stability and consistency.
                                 </p>
                             </div>
-                            <div className="text-lg sm:text-2xl xl:text-3xl 2xl:text-3xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-2 *:xl:py-2  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-12  *:*:pr-1.5 *:*:sm:pr-4">
+                            <Link
+                                href="/about"
+                                className="text-lg sm:text-2xl xl:text-3xl 2xl:text-3xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-2 *:xl:py-2  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-12  *:*:pr-1.5 *:*:sm:pr-4"
+                            >
                                 <Button text={"LEARN MORE"} />
-                            </div>
+                            </Link>
                         </div>
                         <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[550px] xl:w-1/2 xl:max-w-[600px] 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
                             <Image
@@ -115,9 +122,12 @@ export default function Home() {
                                     cleaning service.
                                 </p>
                             </div>
-                            <div className="text-lg sm:text-2xl xl:text-3xl 2xl:text-3xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-2 *:xl:py-2  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-12  *:*:pr-1.5 *:*:sm:pr-4">
+                            <Link
+                                href="/janitorial-supplies"
+                                className="text-lg sm:text-2xl xl:text-3xl 2xl:text-3xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-2 *:xl:py-2  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-12  *:*:pr-1.5 *:*:sm:pr-4"
+                            >
                                 <Button text={"LEARN MORE"} />
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </article>
@@ -144,9 +154,12 @@ export default function Home() {
                                     staff.
                                 </p>
                             </div>
-                            <div className="text-lg sm:text-2xl xl:text-3xl 2xl:text-3xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-2 *:xl:py-2  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-12  *:*:pr-1.5 *:*:sm:pr-4">
+                            <Link
+                                href="/janitorial-services"
+                                className="text-lg sm:text-2xl xl:text-3xl 2xl:text-3xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-2 *:xl:py-2  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-12  *:*:pr-1.5 *:*:sm:pr-4"
+                            >
                                 <Button text={"LEARN MORE"} />
-                            </div>
+                            </Link>
                         </div>
                         <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[550px] xl:w-1/2 xl:max-w-[600px] 2xl:min-w-[730px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[550px] 2xl:h-[700px] drop-shadow-lg">
                             <Image

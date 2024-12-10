@@ -42,7 +42,7 @@ export function ContactBanner({
                 showBanner
                     ? "-translate-y-0"
                     : "-translate-y-0.5 hover:cursor-pointer hover:bg-navy-blue/95 hover:text-white bg-white/90"
-            } ${isBannerHidden ? "translate-y-full" : ""}`} // Apply the translation effect when needed
+            } ${isBannerHidden ? "translate-y-full" : ""}`}
         >
             {showBanner ? (
                 <>
@@ -54,7 +54,6 @@ export function ContactBanner({
                             <Image
                                 src="/rolling-hills-industries-cleaning-company-logo.png"
                                 alt="Rolling Hills Industries Commercial Cleaning Company"
-                                className="duration-500 ease-out hover:scale-105 scale-100"
                                 fill={true}
                                 quality={100}
                             />

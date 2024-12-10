@@ -118,16 +118,16 @@ export default function Contact() {
                     isMounted ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}
             >
-                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full m:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full px-2 lg:px-0 md:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Contact Rolling Hills Industries Inc Today
                     </h2>
                     <div className="flex flex-col sm:flex-row justify-around items-start gap-5 sm:gap-9 lg:gap-14 xl:gap-16 lg:px-0 w-full *:leading-relaxed text-start">
-                        <div className="flex flex-col gap-3 sm:gap-5">
+                        <div className="flex flex-col gap-3 sm:gap-5 px-4 sm:px-2 lg:px-0">
                             <h3 className="text-navy-blue font-bold text-xl lg:text-2xl xl:text-3xl">
                                 Rolling Hills Industries Inc
                             </h3>
-                            <address className="flex flex-col gap-3 xl:gap-5 not-italic">
+                            <address className="flex flex-col gap-3 xl:gap-5 not-italic px-2 lg:px-0">
                                 <p>700 Hoke St</p>
                                 <p>Latrobe, PA 15650</p>
                                 <p>
@@ -140,11 +140,11 @@ export default function Contact() {
                                 </p>
                             </address>
                         </div>
-                        <div className="flex flex-col gap-3 sm:gap-5">
+                        <div className="flex flex-col gap-3 sm:gap-5 px-4 sm:px-2 lg:px-0">
                             <h3 className="text-navy-blue font-bold text-xl lg:text-2xl xl:text-3xl">
                                 Business Hours
                             </h3>
-                            <div className="grid grid-cols-2 gap-2 xl:gap-5 ">
+                            <div className="grid grid-cols-2 gap-2 xl:gap-5 px-2 lg:px-0">
                                 <p>Mon - Fri</p>
                                 <p>9:00 am - 5:00 pm</p>
                                 <p>Sat - Sun</p>
@@ -153,7 +153,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </article>
-                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full md:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full px-2 lg:px-0 md:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                         Contact Us for a Free Estimate!
                     </h2>

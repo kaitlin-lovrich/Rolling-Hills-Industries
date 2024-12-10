@@ -49,9 +49,15 @@ export default function Employment() {
                             you at Rolling Hills.
                         </p>
                     </div>
-                    <div className="text-lg sm:text-2xl xl:text-3xl 2xl:text-3xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-2 *:xl:py-2  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-12  *:*:pr-1.5 *:*:sm:pr-4">
+                    <a
+                        href="https://www.workstream.us/j/a3d940aa/rolling-hills-industries?locale=en&referer_source=https://www.rollinghillsindustries.com/"
+                        className="text-lg sm:text-2xl xl:text-3xl 2xl:text-3xl  *:gap-0.5 *:sm:gap-4 *:pl-5 *:sm:pl-10 *:py-2 *:sm:py-2 *:xl:py-2  *:*:*:size-9 *:*:*:sm:size-10 *:*:*:xl:size-11 *:*:*:2xl:size-12  *:*:pr-1.5 *:*:sm:pr-4"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        aria-label="View available jobs"
+                    >
                         <Button text={"VIEW AVAILABLE JOBS"} />
-                    </div>
+                    </a>
                     <figure className="relative w-full mt-2 h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem] *:rounded-xl">
                         <Image
                             src="/team-members-cleaning-office.jpg"

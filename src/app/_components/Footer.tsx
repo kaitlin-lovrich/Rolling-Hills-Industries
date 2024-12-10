@@ -103,9 +103,12 @@ export function Footer({ ref }: FooterProps) {
                             </Link>
                         </p>
                     </div>
-                    <div className="hidden lg:block *:right-0 *:top-0 text-base xl:text-lg *:gap-1.5 *:xl:gap-3 *:pl-6 *:xl:pl-8 *:py-1.5 *:xl:py-2 *:*:*:size-7 *:*:*:xl:size-9  *:*:pr-2 *:*:xl:pr-4">
+                    <Link
+                        href="#"
+                        className="hidden lg:block *:right-0 *:top-0 text-base xl:text-lg *:gap-1.5 *:xl:gap-3 *:pl-6 *:xl:pl-8 *:py-1.5 *:xl:py-2 *:*:*:size-7 *:*:*:xl:size-9  *:*:pr-2 *:*:xl:pr-4"
+                    >
                         <Button text={"BOOK A FREE ON-SITE ESTIMATE"} />
-                    </div>
+                    </Link>
                 </div>
             </section>
         </footer>

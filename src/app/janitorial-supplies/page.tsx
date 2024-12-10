@@ -16,11 +16,11 @@ export default function JanitorialSupplies() {
                 </div>
             </Banner>
             <section className="mx-auto w-[95%] max-w-[1400px] lg:mt-4">
-                <article className="flex flex-col justify-center items-center px-5 lg:px-0  gap-5 lg:gap-7 xl:gap-10 w-full sm:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
-                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full sm:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
+                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl px-2 lg:px-0">
                         FREE Delivery of All Janitorial Supplies
                     </h2>
-                    <div className="flex flex-col gap-3 xl:gap-5">
+                    <div className="flex flex-col gap-3 xl:gap-5 px-2 lg:px-0">
                         <p>
                             Rolling Hills Industries Inc provides a complete
                             suite of janitorial supplies. We trust our products
@@ -48,14 +48,14 @@ export default function JanitorialSupplies() {
                     <h3 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Unique Cleaning Products
                     </h3>
-                    <div className="flex flex-col w-full lg:w-[90%] gap-8 sm:gap-10 lg:gap-12">
+                    <div className="flex flex-col w-full lg:w-[90%] gap-8 sm:gap-10 lg:gap-12 px-4 lg:px-0">
                         <ul className="grid sm:grid-cols-2 gap-3 xl:gap-6 font-bold text-navy-blue list-disc ml-6 sm:ml-8">
                             {cleaningProductsList.map((product, index) => (
                                 <li key={index}>{product.name}</li>
                             ))}
                         </ul>
                     </div>
-                    <p>
+                    <p className="px-2 lg:px-0">
                         The details of each area are planned and agreed upon
                         prior to the commencement of the contract. Contact us
                         for details on what special cleaning can be provided as

@@ -16,10 +16,10 @@ export default function JanitorialServices() {
             </Banner>
             <section className="mx-auto w-[95%] max-w-[1400px] lg:mt-4">
                 <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 text-center text-dark-gray w-full sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
-                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl px-5 lg:px-0">
+                    <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl px-2 lg:px-0">
                         Top-Quality Janitorial Services
                     </h2>
-                    <div className="flex flex-col gap-3 xl:gap-5 px-5 lg:px-0">
+                    <div className="flex flex-col gap-3 xl:gap-5 px-2 lg:px-0">
                         <p>
                             When you hire Rolling Hills Industries Inc for
                             janitorial services, you can rest assured knowing
@@ -76,12 +76,12 @@ export default function JanitorialServices() {
                 </figure>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px]">
-                <article className="flex flex-col-reverse xl:flex-row w-full sm:w-[90%] md:w-[85%] xl:w-[95%] gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 mx-auto">
+                <article className="flex flex-col-reverse xl:flex-row w-full sm:w-[90%] md:w-[85%] xl:w-[95%] gap-5 lg:gap-7 xl:gap-10 px-2 lg:px-0 mx-auto">
                     <div className="flex flex-col w-full xl:w-1/2 gap-5 lg:gap-7 xl:gap-10 justify-center">
-                        <h4 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
+                        <h4 className="text-navy-blue text-center xl:text-start font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                             Floor Care
                         </h4>
-                        <div className="flex flex-col gap-3 xl:gap-5">
+                        <div className="flex flex-col gap-3 xl:gap-5 text-center xl:text-start">
                             <p>
                                 Our experienced and specialized floor care team
                                 uses top-notch finishing and stripping products
@@ -108,7 +108,7 @@ export default function JanitorialServices() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px]">
-                <article className="flex flex-col xl:flex-row w-full sm:w-[90%] md:w-[85%] xl:w-[95%] 2xl:w-full gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 mx-auto">
+                <article className="flex flex-col xl:flex-row w-full sm:w-[90%] md:w-[85%] xl:w-[95%] 2xl:w-full gap-5 lg:gap-7 xl:gap-10 px-2 lg:px-0 mx-auto">
                     <div className="relative w-full mx-auto max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[600px] xl:min-w-[600px] xl:w-1/2 xl:max-w-[600px] h-[350px] sm:h-[450px] lg:h-[550px] drop-shadow-lg">
                         <Image
                             src="/professional-cleaner-showing-approval.jpg"
@@ -119,10 +119,10 @@ export default function JanitorialServices() {
                     </div>
                     <div className="flex flex-col justify-around items-center w-full xl:w-1/2 xl:text-start text-dark-gray gap-8 xl:gap-0 ">
                         <div className="flex flex-col w-full gap-5 lg:gap-7 xl:gap-10 justify-center">
-                            <h4 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
+                            <h4 className="text-navy-blue text-center xl:text-start font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                                 Our Mission
                             </h4>
-                            <div className="flex flex-col gap-3 xl:gap-5">
+                            <div className="flex flex-col gap-3 xl:gap-5 text-center xl:text-start">
                                 <p>
                                     Our mission is to be the premier provider of
                                     commercial and industrial cleaning services

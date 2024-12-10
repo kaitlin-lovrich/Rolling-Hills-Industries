@@ -14,7 +14,7 @@ export default function About() {
                 </div>
             </Banner>
             <section className="mx-auto w-[95%] max-w-[1400px] lg:mt-4">
-                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 text-center w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 px-2 lg:px-0 text-center w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         About Rolling Hills Industries
                     </h2>
@@ -49,7 +49,7 @@ export default function About() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px]">
-                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 text-center w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
+                <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 px-2 lg:px-0 text-center w-full max-w-[1430px] sm:w-[90%] md:w-[85%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Why Choose Rolling Hills?
                     </h2>

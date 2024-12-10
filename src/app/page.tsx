@@ -33,7 +33,7 @@ export default function Home() {
                         <h2 className="text-white font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                             We Offer Commercial Cleaning Services
                         </h2>
-                        <div className="grid grid-cols-2 min-[420px]:grid-cols-3 justify-items-center 2xl:w-[70%] max-w-[90%] sm:max-w-[85%] xl:max-w-[1000px] gap-x-7 sm:gap-x-14 md:gap-x-14 lg:gap-x-20 gap-y-7 sm:gap-y-12 md:gap-y-12 lg:gap-y-16">
+                        <div className="grid grid-cols-2 min-[410px]:grid-cols-3 justify-items-center 2xl:w-[70%] max-w-[90%] sm:max-w-[85%] xl:max-w-[1000px] gap-x-7 sm:gap-x-14 md:gap-x-14 lg:gap-x-20 gap-y-7 sm:gap-y-12 md:gap-y-12 lg:gap-y-16">
                             {businessesServiced.map((business, index) => (
                                 <BusinessCard business={business} key={index} />
                             ))}
@@ -84,7 +84,7 @@ export default function Home() {
                 </article>
             </section>
             <section className="mx-auto w-[95%] max-w-[1400px]">
-                <article className="flex flex-col gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 py-9 xl:py-16">
+                <article className="flex flex-col gap-5 lg:gap-7 xl:gap-10 px-2 lg:px-0 py-9 xl:py-16">
                     <h2 className="text-navy-blue text-center font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Top-Quality Cleaning Supplies Used
                     </h2>
@@ -160,7 +160,7 @@ export default function Home() {
                 </article>
             </section>
             <section className="mx-auto w-[95%]">
-                <article className="flex flex-col text-center gap-5 lg:gap-7 xl:gap-10 px-5 lg:px-0 py-9 xl:py-16 overflow-hidden">
+                <article className="flex flex-col text-center gap-5 lg:gap-7 xl:gap-10 px-2 py-9 xl:py-16 overflow-hidden">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
                         Our Clients
                     </h2>

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 
@@ -20,7 +21,9 @@ export function PromoBanner() {
                     : "-translate-y-full opacity-0"
             }`}
         >
-            <span className="mx-auto">Book a free on-site estimate today!</span>
+            <Link href="/schedule-meeting" className="mx-auto">
+                Book a free on-site estimate today!
+            </Link>
             <span
                 className="mr-2 cursor-pointer *:size-5"
                 onClick={() => setShowBanner(false)}

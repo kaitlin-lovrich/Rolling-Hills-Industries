@@ -32,6 +32,11 @@ export const metadata: Metadata = {
         address: false,
         telephone: true,
     },
+    icons: {
+        icon: "/favicon-32x32.png",
+        apple: "/apple-touch-icon.png",
+        shortcut: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({

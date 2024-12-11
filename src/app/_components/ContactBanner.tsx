@@ -41,7 +41,7 @@ export function ContactBanner({
             } ${
                 showBanner
                     ? "-translate-y-0"
-                    : "-translate-y-0.5 hover:cursor-pointer hover:bg-navy-blue/95 hover:text-white bg-white/90"
+                    : "-translate-y-0.5 hover:cursor-pointer hover:bg-navy-blue/95 hover:text-white bg-white/90 max-w-[250px] sm:max-w-[300px]"
             } ${isBannerHidden ? "translate-y-full" : ""}`}
         >
             {showBanner ? (
@@ -130,7 +130,7 @@ export function ContactBanner({
                 </>
             ) : (
                 <p
-                    className={`my-2 text-center opacity transform ${
+                    className={`my-0.5 sm:my-1 xl:my-1.5 text-xl 2xl:text-2xl text-center opacity transform ${
                         showBanner ? "opacity-0" : "opacity-100"
                     }`}
                     onClick={() => setShowBanner(true)}

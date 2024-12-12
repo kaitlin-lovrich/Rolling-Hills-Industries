@@ -120,12 +120,12 @@ export default function Contact() {
             >
                 <article className="flex flex-col justify-center items-center gap-5 lg:gap-7 xl:gap-10 w-full px-2 lg:px-0 md:w-[90%] xl:w-[95%] mx-auto *:leading-relaxed">
                     <h2 className="text-navy-blue font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
-                        Contact Rolling Hills Industries Inc Today
+                        Contact Rolling Hills Industries Today
                     </h2>
                     <div className="flex flex-col sm:flex-row justify-around items-start gap-5 sm:gap-9 lg:gap-14 xl:gap-16 lg:px-0 w-full *:leading-relaxed text-start">
                         <div className="flex flex-col gap-3 sm:gap-5 px-4 sm:px-2 lg:px-0">
                             <h3 className="text-navy-blue font-bold text-xl lg:text-2xl xl:text-3xl">
-                                Rolling Hills Industries Inc
+                                Rolling Hills Industries
                             </h3>
                             <address className="flex flex-col gap-3 xl:gap-5 not-italic px-2 lg:px-0">
                                 <p>700 Hoke St</p>

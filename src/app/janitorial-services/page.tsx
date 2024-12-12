@@ -21,7 +21,7 @@ export default function JanitorialServices() {
                     </h2>
                     <div className="flex flex-col gap-3 xl:gap-5 px-2 lg:px-0">
                         <p>
-                            When you hire Rolling Hills Industries Inc for
+                            When you hire Rolling Hills Industries for
                             janitorial services, you can rest assured knowing
                             that we use only high-quality disinfectants and
                             cleaning products to clean bathrooms, including

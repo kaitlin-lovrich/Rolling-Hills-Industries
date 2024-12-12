@@ -24,7 +24,7 @@ export default function ScheduleMeeting() {
                     </div>
                     <div
                         className="calendly-inline-widget w-[75%] min-w-[320px] h-[650px] sm:h-[700px]"
-                        data-url="https://calendly.com/doug-prah-rollinghillsindustries/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=3a434c&primary_color=032954"
+                        data-url="https://calendly.com/doug-prah-rollinghillsindustries/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=032954&primary_color=e8a927"
                     ></div>
                     <script
                         type="text/javascript"

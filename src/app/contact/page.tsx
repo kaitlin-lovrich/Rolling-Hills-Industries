@@ -261,7 +261,7 @@ export default function Contact() {
                                     onChange={handleChange}
                                     required
                                     aria-label="Industry Type"
-                                    className="w-full p-3 sm:p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
+                                    className="w-full p-3 sm:p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray hover:cursor-pointer"
                                 >
                                     <option value="" disabled>
                                         Select Industry
@@ -302,7 +302,7 @@ export default function Contact() {
                                     onChange={handleChange}
                                     required
                                     aria-label="What services are you interested in?"
-                                    className="w-full p-3 sm:p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray"
+                                    className="w-full p-3 sm:p-2 xl:p-3 rounded bg-white/20 focus:outline-2 focus:outline focus:outline-white drop-shadow-lg *:text-dark-gray hover:cursor-pointer"
                                 >
                                     <option value="" disabled>
                                         Select Service

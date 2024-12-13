@@ -22,8 +22,8 @@ export default function JanitorialSupplies() {
                     </h2>
                     <div className="flex flex-col gap-3 xl:gap-5 px-2 lg:px-0">
                         <p>
-                            Rolling Hills Industries Inc provides a complete
-                            suite of janitorial supplies. We trust our products
+                            Rolling Hills Industries provides a complete suite
+                            of janitorial supplies. We trust our products
                             capabilities because we use them each and every day.
                             You can order products from our list of in-stock
                             products or from Misco&apos;s line of products.

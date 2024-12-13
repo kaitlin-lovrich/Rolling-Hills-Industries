@@ -1,3 +1,5 @@
+import CalendlyCalendar from "./_components/CalendlyCalendar";
+
 export default function ScheduleMeeting() {
     return (
         <main className="flex flex-col gap-10 xl:gap-14 min-h-screen">
@@ -22,15 +24,7 @@ export default function ScheduleMeeting() {
                             no cost to you!
                         </p>
                     </div>
-                    <div
-                        className="calendly-inline-widget w-[75%] min-w-[320px] h-[650px] sm:h-[700px]"
-                        data-url="https://calendly.com/doug-prah-rollinghillsindustries/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=032954&primary_color=e8a927"
-                    ></div>
-                    <script
-                        type="text/javascript"
-                        src="https://assets.calendly.com/assets/external/widget.js"
-                        async
-                    ></script>
+                    <CalendlyCalendar />
                 </article>
             </section>
         </main>

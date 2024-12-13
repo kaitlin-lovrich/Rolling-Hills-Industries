@@ -48,6 +48,11 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <meta name="theme-color" content="rgba(3, 41, 84, .75)" />
+                <link
+                    rel="preload"
+                    href="https://assets.calendly.com/assets/external/widget.js"
+                    as="script"
+                />
             </head>
             <body
                 className={`${inriaSans.className} text-dark-gray text-lg lg:text-xl xl:text-2xl`}

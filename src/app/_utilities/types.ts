@@ -1,79 +1,80 @@
 export type Page =
-    | "Home"
-    | "About"
-    | "Janitorial Services"
-    | "Janitorial Supplies"
-    | "Employment"
-    | "Contact";
+  | "Home"
+  | "About"
+  | "Janitorial Services"
+  | "Janitorial Supplies"
+  | "Employment"
+  | "Contact";
 
 export interface BannerProps {
-    isHomePage?: boolean;
-    backgroundImageUrl: string;
-    altText: string;
-    title?: string;
-    children?: React.ReactNode;
+  isHomePage?: boolean;
+  backgroundImageUrl: string;
+  altText: string;
+  title?: string;
+  children?: React.ReactNode;
 }
 
 export interface ButtonProps {
-    handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-    text: string;
+  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  type?: "button" | "submit" | "reset";
+  text: string;
 }
 
 export interface NavigationProps {
-    isScrolledToTop?: boolean;
-    pathName: string;
-    closeMenu?: () => void;
+  isScrolledToTop?: boolean;
+  pathName: string;
+  closeMenu?: () => void;
 }
 
 export interface AnimatedMenuIconProps {
-    isModalOpen: boolean;
-    setIsModalOpen: (isModalOpen: boolean) => void;
-    isScrolledToTop: boolean;
+  isModalOpen: boolean;
+  setIsModalOpen: (isModalOpen: boolean) => void;
+  isScrolledToTop: boolean;
 }
 
 export interface BusinessCardProps {
-    business: Business;
+  business: Business;
 }
 
 export type Business = {
-    imageSrc: string;
-    alt: string;
+  imageSrc: string;
+  alt: string;
 };
 
 export type Client = {
-    imageSrc: string;
-    alt: string;
+  imageSrc: string;
+  alt: string;
 };
 
 export type Photo = {
-    imageSrc: string;
-    alt: string;
-    href: string;
-    credit: string;
+  imageSrc: string;
+  alt: string;
+  href: string;
+  credit: string;
 };
 
 export type CleaningProduct = {
-    name: string;
+  name: string;
 };
 
 export type EmployeeBenefit = {
-    name: string;
+  name: string;
 };
 
 export interface Window {
-    grecaptcha: Grecaptcha;
+  grecaptcha: Grecaptcha;
 }
 
 export interface Grecaptcha {
-    getResponse: (opt_widget_id?: string) => string;
-    reset: (opt_widget_id?: string) => void;
+  getResponse: (opt_widget_id?: string) => string;
+  reset: (opt_widget_id?: string) => void;
 }
 
 export interface FooterProps {
-    ref: React.RefObject<HTMLDivElement>;
+  ref: React.RefObject<HTMLDivElement>;
 }
 
 export interface ContactBannerProps {
-    isOverFooter: boolean;
-    scrollDirection: string | null;
+  isOverFooter: boolean;
+  scrollDirection: string | null;
 }
